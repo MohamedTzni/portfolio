@@ -1,5 +1,37 @@
+@import './styles/fonts.scss';
+
+:root {
+  --font-body: 'Karla', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Fira Code', 'Courier New', Courier, monospace;
+  --color-bg: #1c1c1c;
+  --color-text: #f4f9f8;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.5;
+}
+
+a,
+button,
+[role='button'],
+.clickable,
+a img,
+a *,
+button * {
+  cursor: pointer;
+}
+
+input,
+textarea {
+  cursor: text;
 }
