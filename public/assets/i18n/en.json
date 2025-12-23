@@ -1,0 +1,235 @@
+{
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Mohamed Touzani",
+    "role": "Fullstack Developer",
+    "subtitle": "Fullstack Developer",
+    "headline": "Mohamed Touzani",
+    "firstname": "Mohamed",
+    "lastname": "Touzani",
+    "buttons": {
+      "checkWork": "Check my work",
+      "contact": "Contact me"
+    },
+    "marquee": {
+      "available": "Available for remote work",
+      "role": "Fullstack Developer",
+      "location": "Based in Solingen",
+      "openToWork": "Open to work"
+    }
+  },
+  "nav": {
+    "aboutMe": "About me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "aboutMe": {
+    "tag": "Who I am",
+    "title": "About Me",
+    "intro": "Hi, I'm Mohamed — a full-stack developer passionate about clean code, scalable architectures, and clear interfaces. What excites me most is when frontend and backend come together seamlessly to turn an idea into a smooth user experience.",
+    "highlights": {
+      "location": "From Solingen, Germany — I enjoy working remotely and in international teams.",
+      "mindset": "Curious and growth-oriented — I explore new technologies every sprint and share my insights with the team.",
+      "problem": "Analytical problem-solver — I break challenges into testable steps, measure results, and iterate toward the best solution."
+    }
+  },
+  "skills": {
+    "sectionHeading": "Technologies",
+    "title": "Skill Set",
+    "description": "An overview of my skills. I work with modern frontend and backend technologies, focusing on clean, scalable code. Continuous learning is part of my workflow — I stay flexible and adapt quickly to new developments.",
+    "cta": {
+      "title": "Missing",
+      "highlight": "a specific skill?",
+      "text": "Feel free to reach out. I’m always expanding my knowledge and learning new technologies with purpose.",
+      "button": "Get in touch"
+    }
+  },
+  "projects": {
+    "eyebrow": "Portfolio",
+    "title": "Featured Projects",
+    "lead": "Explore a selection of my work here – interact with projects to see my skills in action.",
+    "dialog": {
+      "question": "What is this project about?",
+      "github": "GitHub",
+      "liveTest": "Live Test",
+      "nextProject": "Next project"
+    },
+    "pokedex": {
+      "title": "Pokedex",
+      "subtitle": "API-based Pokédex",
+      "description": "A responsive Pokédex powered by the PokéAPI. Search, filter, and explore Pokémon stats with smooth animations and offline caching."
+    },
+    "goblinSlayer": {
+      "title": "Goblin Slayer",
+      "subtitle": "Jump ’n’ Run Web Game",
+      "description": "A fully JavaScript-built browser game with custom design, combat mechanics, and modular enemy AI. Built on a component-based architecture and optimized for smooth performance."
+    },
+    "placeholder": {
+      "title": "Placeholder",
+      "subtitle": "Placeholder Subtitle",
+      "description": "Placeholder description"
+    }
+  },
+  "references": {
+    "title": "What colleagues say about me",
+    "items": {
+      "heinze": {
+        "name": "Placeholder Name",
+        "role": "Placeholder Role",
+        "text": "Placeholder for colleague feedback. A real testimonial can be added here later."
+      },
+      "schmidt": {
+        "name": "Placeholder Name",
+        "role": "Placeholder Role",
+        "text": "Placeholder for colleague feedback. A real testimonial can be added here later."
+      },
+      "placeholder1": {
+        "name": "Placeholder Name",
+        "role": "Placeholder Role",
+        "text": "Placeholder for colleague feedback. A real testimonial can be added here later."
+      },
+      "placeholder2": {
+        "name": "Placeholder Name",
+        "role": "Placeholder Role",
+        "text": "Placeholder for colleague feedback. A real testimonial can be added here later."
+      }
+    }
+  },
+  "contact": {
+    "label": "Contact Me",
+    "title": "Let’s work together",
+    "problem": {
+      "title": "Looking for a developer?",
+      "description": "I help teams and projects with clean code, solid architecture, and a strong focus on user experience. If you’re looking for a reliable full-stack developer who brings ideas to life — <strong>let’s talk.</strong>"
+    },
+    "form": {
+      "nameLabel": "What's your name?",
+      "namePlaceholder": "Your name goes here",
+      "nameError": "Oops! it seems your name is missing",
+      "emailLabel": "What's your email?",
+      "emailPlaceholder": "youremail@email.com",
+      "emailError": "Oops! your email is required",
+      "messageLabel": "How can I help you?",
+      "messagePlaceholder": "Hello Mohamed, I am interested in...",
+      "messageError": "What do you need to develop?",
+      "privacyText1": "I've read the ",
+      "privacyLink": "privacy policy",
+      "privacyText2": " and agree to the processing of my data as outlined.",
+      "privacyError": "Please accept the privacy policy.",
+      "submit": "Send",
+      "sending": "Sending...",
+      "successMessage": "✓ Message sent successfully! I'll get back to you soon.",
+      "errorMessage": "✗ Failed to send. Please try again later or contact me directly."
+    }
+  },
+  "footer": {
+    "legalNotice": "Legal Notice",
+    "privacy": "Privacy"
+  },
+  "legalNotice": {
+    "title": "Legal Notice",
+    "sections": {
+      "imprint": {
+        "title": "Information according to §5 TMG (German Telemedia Act)",
+        "name": "Mohamed Touzani",
+        "address": "Merowingerstraße 7",
+        "city": "42653 Solingen, Germany",
+        "email": "Email: kontakt@mohamed-touzani.de",
+        "purpose": "This portfolio is intended solely to showcase my work as a full-stack developer. It is a non-commercial personal website."
+      },
+      "disclaimer": {
+        "title": "Content Responsibility",
+        "text": "The content on this website has been created with the utmost care. However, I cannot guarantee the accuracy, completeness, or timeliness of the information provided."
+      },
+      "liabilityLinks": {
+        "title": "Liability for External Links",
+        "text": "My portfolio contains links to external websites over which I have no control. Therefore, I cannot accept any responsibility for their content. The respective provider or operator of those sites is always responsible for the content of linked pages."
+      },
+      "copyright": {
+        "title": "Copyright",
+        "text": "All content and works created by me on this website are subject to German copyright law. Third-party content is marked as such. Any duplication, modification, distribution, or use outside the limits of copyright law requires my written consent."
+      },
+      "contact": {
+        "title": "Contact",
+        "text": "For questions about this portfolio or legal information, please contact me via email at kontakt@mohamed-touzani.de."
+      },
+      "date": "Last updated: October 3, 2025"
+    }
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "sections": {
+      "responsible": {
+        "title": "1. Controller",
+        "name": "Mohamed Touzani",
+        "address": "Merowingerstraße 7",
+        "city": "42653 Solingen",
+        "country": "Germany",
+        "email": "Email: kontakt@mohamed-touzani.de"
+      },
+      "generalInformation": {
+        "title": "2. General Information",
+        "text": "I take the protection of your personal data seriously. Your data is handled confidentially and in accordance with the applicable data protection laws, including the EU General Data Protection Regulation (GDPR) and the German Federal Data Protection Act (BDSG). This Privacy Policy explains what personal data is collected, how it is used, and your rights in relation to it."
+      },
+      "hosting": {
+        "title": "3. Hosting",
+        "text": "This website is hosted by ALL-INKL.COM – Neue Medien Münnich, Hauptstraße 68, 02742 Friedersdorf, Germany. ALL-INKL processes data such as server log files to ensure stable and secure website operation. The legal basis for this is Article 6(1)(f) GDPR (legitimate interest in secure website operation)."
+      },
+      "dataCollection": {
+        "title": "4. Data Collection and Processing",
+        "intro": "When visiting this website, your browser automatically transmits certain information:",
+        "items": {
+          "browserType": "Browser type and version",
+          "operatingSystem": "Operating system",
+          "referrerUrl": "Referrer URL",
+          "hostname": "Hostname of the accessing device",
+          "requestTime": "Time of the server request",
+          "ipAddress": "IP address"
+        },
+        "outro": "This data is not combined with other data sources and is deleted after no more than seven days. The processing is based on Article 6(1)(f) GDPR (legitimate interest in the functionality and security of the website)."
+      },
+      "contactForm": {
+        "title": "5. Contact Form",
+        "text": "If you contact me via the contact form, the data you enter (name, email address, message) will be processed to handle your request. The form is operated via EmailJS (EmailJS Ltd, 9 Appold St, London EC2A 2AP, United Kingdom).",
+        "emailjs": "EmailJS enables sending form data as an email message. The data is processed only for the purpose of transmitting your inquiry and temporarily stored.",
+        "legalBasis": "Legal basis: Article 6(1)(b) GDPR (performance of a contract or pre-contractual measures) and Article 6(1)(f) GDPR (legitimate interest in efficient communication). A Data Processing Agreement pursuant to Article 28 GDPR exists with EmailJS."
+      },
+      "linkedIn": {
+        "title": "6. LinkedIn Link",
+        "text": "This website may contain a link to LinkedIn (LinkedIn Ireland Unlimited Company, Wilton Place, Dublin 2, Ireland). When you click the LinkedIn icon, a direct connection to LinkedIn's servers is established, which may transmit personal data (e.g., IP address) to LinkedIn.",
+        "disclaimer": "I have no control over LinkedIn's data processing. For details, please refer to LinkedIn's privacy policy:",
+        "link": "https://www.linkedin.com/legal/privacy-policy"
+      },
+      "fonts": {
+        "title": "7. Fonts",
+        "text": "This website uses Google Fonts that are locally hosted. No connection to Google servers is established, and no personal data is transmitted to Google when loading the website."
+      },
+      "yourRights": {
+        "title": "8. Your Rights",
+        "intro": "You have the following rights under the GDPR:",
+        "items": {
+          "information": "Right of access (Article 15)",
+          "correction": "Right to rectification (Article 16)",
+          "deletion": "Right to erasure (Article 17)",
+          "restriction": "Right to restriction of processing (Article 18)",
+          "portability": "Right to data portability (Article 20)",
+          "objection": "Right to object (Article 21)"
+        },
+        "contact": "You may exercise these rights by contacting me at the email address above.",
+        "authority": "You also have the right to lodge a complaint with a supervisory authority, e.g.:",
+        "authorityName": "The Hessian Commissioner for Data Protection and Freedom of Information",
+        "authorityAddress": "P.O. Box 3163, 65021 Wiesbaden, Germany",
+        "authorityLink": "https://datenschutz.hessen.de"
+      },
+      "storage": {
+        "title": "9. Data Retention and Deletion",
+        "text": "Personal data will be deleted once the purpose of storage no longer applies or legal retention periods have expired."
+      },
+      "security": {
+        "title": "10. Security",
+        "text": "Appropriate technical and organisational measures are in place to protect your data against loss, manipulation, or unauthorised access. The connection to this website is secured using SSL/TLS encryption."
+      }
+    }
+  }
+}

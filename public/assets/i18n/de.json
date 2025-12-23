@@ -1,0 +1,235 @@
+{
+  "hero": {
+    "greeting": "Hallo, ich bin",
+    "name": "Mohamed Touzani",
+    "role": "Fullstack Developer",
+    "subtitle": "Fullstack Developer",
+    "headline": "Mohamed Touzani",
+    "firstname": "Mohamed",
+    "lastname": "Touzani",
+    "buttons": {
+      "checkWork": "Meine Projekte",
+      "contact": "Kontakt"
+    },
+    "marquee": {
+      "available": "Verfügbar für Remote-Arbeit",
+      "role": "Fullstack Developer",
+      "location": "Solingen, Deutschland",
+      "openToWork": "Offen für neue Projekte"
+    }
+  },
+  "nav": {
+    "aboutMe": "Über mich",
+    "skills": "Skills",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "aboutMe": {
+    "tag": "Wer ich bin",
+    "title": "Über mich",
+    "intro": "Hi, ich bin Mohamed — Fullstack-Entwickler mit Leidenschaft für sauberen Code, skalierbare Architekturen und klare Interfaces. Am meisten begeistert mich, wenn Frontend und Backend perfekt zusammenspielen und aus einer Idee ein reibungsloses Nutzererlebnis wird.",
+    "highlights": {
+      "location": "Aus Solingen, Deutschland – Ich arbeite gerne remote und in internationalen Teams.",
+      "mindset": "Neugierig und lernorientiert – In jedem Sprint entdecke ich neue Technologien und teile mein Wissen aktiv mit dem Team.",
+      "problem": "Analytischer Denker – Ich zerlege Probleme in testbare Schritte, messe Ergebnisse und optimiere bis zur besten Lösung."
+    }
+  },
+  "skills": {
+    "sectionHeading": "Technologien",
+    "title": "Skill Set",
+    "description": "Ein Überblick über meine Fähigkeiten. Ich arbeite mit modernen Frontend- und Backend-Technologien und lege Wert auf sauberen, skalierbaren Code. Lernen gehört für mich zum Alltag – ich bleibe flexibel und passe mich neuen Entwicklungen schnell an.",
+    "cta": {
+      "title": "Dir fehlt ein",
+      "highlight": "bestimmter Skill?",
+      "text": "Melde dich gerne. Ich erweitere mein Wissen stetig und eigne mir neue Technologien gezielt an.",
+      "button": "Kontakt aufnehmen"
+    }
+  },
+  "projects": {
+    "eyebrow": "Portfolio",
+    "title": "Meine Projekte",
+    "lead": "Eine Auswahl meiner Arbeiten. Jedes Projekt zeigt, wie ich Ideen umsetze, sauberen Code schreibe und Technologien miteinander verbinde.",
+    "dialog": {
+      "question": "Was macht dieses Projekt aus?",
+      "github": "GitHub",
+      "liveTest": "Live-Demo",
+      "nextProject": "Nächstes Projekt"
+    },
+    "pokedex": {
+      "title": "El Pollo Loco",
+      "subtitle": "API-basierter Pokédex",
+      "description": "Ein responsiver Pokédex auf Basis der PokéAPI. Nutzer können Pokémon suchen, filtern und Statistiken erkunden – mit flüssigen Animationen und Offline-Caching."
+    },
+    "goblinSlayer": {
+      "title": "Join",
+      "subtitle": "Jump ’n’ Run Webgame",
+      "description": "Ein vollständig in JavaScript entwickeltes Browser-Game mit eigenem Design, Kampfmechanik und modularer Gegner-KI. Aufbauend auf einer komponentenbasierten Architektur und optimiert für flüssige Performance."
+    },
+    "placeholder": {
+      "title": "Placeholder",
+      "subtitle": "Platzhalter Untertitel",
+      "description": "Platzhalter Beschreibung"
+    }
+  },
+  "references": {
+    "title": "Was Kollegen über mich sagen",
+    "items": {
+      "heinze": {
+        "name": "Platzhalter Name",
+        "role": "Platzhalter Rolle",
+        "text": "Platzhalter für Kollegen-Feedback. Hier kann später ein echtes Testimonial eingefügt werden."
+      },
+      "schmidt": {
+        "name": "Platzhalter Name",
+        "role": "Platzhalter Rolle",
+        "text": "Platzhalter für Kollegen-Feedback. Hier kann später ein echtes Testimonial eingefügt werden."
+      },
+      "placeholder1": {
+        "name": "Platzhalter Name",
+        "role": "Platzhalter Rolle",
+        "text": "Platzhalter für Kollegen-Feedback. Hier kann später ein echtes Testimonial eingefügt werden."
+      },
+      "placeholder2": {
+        "name": "Platzhalter Name",
+        "role": "Platzhalter Rolle",
+        "text": "Platzhalter für Kollegen-Feedback. Hier kann später ein echtes Testimonial eingefügt werden."
+      }
+    }
+  },
+  "contact": {
+    "label": "Kontaktiere mich",
+    "title": "Lass uns zusammen arbeiten",
+    "problem": {
+      "title": "Suchst du einen Entwickler?",
+      "description": "Ich unterstütze Teams und Projekte mit sauberem Code, durchdachten Lösungen und einem klaren Blick für Nutzererlebnisse. Wenn du einen zuverlässigen Fullstack-Entwickler suchst, der Ideen effizient umsetzt – <strong>lass uns reden.</strong>"
+    },
+    "form": {
+      "nameLabel": "Wie ist dein Name?",
+      "namePlaceholder": "Dein Name kommt hier hin",
+      "nameError": "Hoppla! Dein Name fehlt",
+      "emailLabel": "Wie lautet deine E-Mail?",
+      "emailPlaceholder": "deineemail@email.com",
+      "emailError": "Hoppla! Deine E-Mail ist erforderlich",
+      "messageLabel": "Wie kann ich dir helfen?",
+      "messagePlaceholder": "Hallo Mohamed, ich interessiere mich für...",
+      "messageError": "Was möchtest du entwickeln?",
+      "privacyText1": "Ich habe die ",
+      "privacyLink": "Datenschutzerklärung",
+      "privacyText2": " gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+      "privacyError": "Bitte akzeptiere die Datenschutzerklärung.",
+      "submit": "Senden",
+      "sending": "Wird gesendet...",
+      "successMessage": "✓ Nachricht erfolgreich gesendet! Ich melde mich bald bei dir.",
+      "errorMessage": "✗ Fehler beim Senden. Bitte versuche es später erneut oder kontaktiere mich direkt."
+    }
+  },
+  "footer": {
+    "legalNotice": "Impressum",
+    "privacy": "Datenschutz"
+  },
+  "legalNotice": {
+    "title": "Impressum",
+    "sections": {
+      "imprint": {
+        "title": "Angaben gemäß § 5 TMG",
+        "name": "Mohamed Touzani",
+        "address": "Merowingerstraße 7",
+        "city": "42653 Solingen, Deutschland",
+        "email": "E-Mail: kontakt@mohamed-touzani.de",
+        "purpose": "Dieses Portfolio dient ausschließlich der Präsentation meiner Arbeiten als Fullstack-Entwickler. Es verfolgt keine kommerziellen Zwecke."
+      },
+      "disclaimer": {
+        "title": "Haftung für Inhalte",
+        "text": "Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann ich jedoch keine Gewähr übernehmen."
+      },
+      "liabilityLinks": {
+        "title": "Haftung für Links",
+        "text": "Mein Portfolio enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich."
+      },
+      "copyright": {
+        "title": "Urheberrecht",
+        "text": "Die durch mich erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung oder Verbreitung außerhalb der Grenzen des Urheberrechts bedarf meiner schriftlichen Zustimmung."
+      },
+      "contact": {
+        "title": "Kontakt",
+        "text": "Bei Fragen zum Portfolio oder rechtlichen Hinweisen kontaktieren Sie mich bitte per E-Mail unter kontakt@mohamed-touzani.de."
+      },
+      "date": "Stand: 03. Oktober 2025"
+    }
+  },
+  "privacyPolicy": {
+    "title": "Datenschutzerklärung",
+    "sections": {
+      "responsible": {
+        "title": "1. Verantwortlicher",
+        "name": "Mohamed Touzani",
+        "address": "Merowingerstraße 7",
+        "city": "42653 Solingen",
+        "country": "Deutschland",
+        "email": "E-Mail: kontakt@mohamed-touzani.de"
+      },
+      "generalInformation": {
+        "title": "2. Allgemeine Hinweise",
+        "text": "Der Schutz Ihrer personenbezogenen Daten ist mir wichtig. Ich behandle Ihre Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften (insbesondere DSGVO und BDSG). Diese Datenschutzerklärung informiert Sie über Art, Umfang und Zweck der Verarbeitung personenbezogener Daten auf meiner Website."
+      },
+      "hosting": {
+        "title": "3. Hosting",
+        "text": "Meine Website wird bei ALL-INKL.COM – Neue Medien Münnich, Hauptstraße 68, 02742 Friedersdorf, gehostet. ALL-INKL verarbeitet personenbezogene Daten (z. B. Server-Logfiles), um den sicheren und stabilen Betrieb der Website zu gewährleisten. Grundlage hierfür ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem sicheren Betrieb)."
+      },
+      "dataCollection": {
+        "title": "4. Erhebung und Speicherung personenbezogener Daten",
+        "intro": "Beim Aufruf dieser Website werden automatisch Daten vom Webserver erfasst:",
+        "items": {
+          "browserType": "Browsertyp und Browserversion",
+          "operatingSystem": "verwendetes Betriebssystem",
+          "referrerUrl": "Referrer-URL",
+          "hostname": "Hostname des zugreifenden Rechners",
+          "requestTime": "Uhrzeit der Serveranfrage",
+          "ipAddress": "IP-Adresse"
+        },
+        "outro": "Diese Daten werden nicht mit anderen Datenquellen zusammengeführt und nach spätestens 7 Tagen gelöscht. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO."
+      },
+      "contactForm": {
+        "title": "5. Kontaktformular",
+        "text": "Wenn Sie mir über das Kontaktformular schreiben, werden Ihre Angaben zur Bearbeitung der Anfrage verarbeitet. Pflichtangaben sind Name, E-Mail-Adresse und Ihre Nachricht. Die Datenverarbeitung erfolgt über den Dienst EmailJS (EmailJS Ltd, 9 Appold St, London EC2A 2AP, Vereinigtes Königreich).",
+        "emailjs": "EmailJS ermöglicht das Versenden von Formularinhalten per E-Mail. Ihre Daten werden ausschließlich zum Versand Ihrer Nachricht verwendet. Eine Speicherung durch EmailJS erfolgt nur temporär.",
+        "legalBasis": "Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung bzw. vorvertragliche Maßnahmen) sowie Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an funktionierender Kommunikation). Mit EmailJS besteht ein Auftragsverarbeitungsvertrag gemäß Art. 28 DSGVO."
+      },
+      "linkedIn": {
+        "title": "6. Verwendung von LinkedIn-Links",
+        "text": "Auf meiner Website kann ein Icon von LinkedIn (LinkedIn Ireland Unlimited Company, Wilton Place, Dublin 2, Irland) eingebunden sein. Beim Anklicken des Icons wird eine Verbindung zu den Servern von LinkedIn hergestellt. Dabei können personenbezogene Daten (z. B. IP-Adresse) an LinkedIn übermittelt werden.",
+        "disclaimer": "Ich weise darauf hin, dass ich keinen Einfluss auf die Datenverarbeitung durch LinkedIn habe. Informationen hierzu finden Sie in der Datenschutzerklärung von LinkedIn:",
+        "link": "https://www.linkedin.com/legal/privacy-policy"
+      },
+      "fonts": {
+        "title": "7. Verwendung von Schriftarten (Google Fonts)",
+        "text": "Die auf dieser Website verwendeten Schriftarten von Google Fonts sind lokal eingebunden. Es erfolgt keine Verbindung zu Servern von Google, und es werden keine personenbezogenen Daten an Google übertragen."
+      },
+      "yourRights": {
+        "title": "8. Ihre Rechte",
+        "intro": "Sie haben jederzeit das Recht auf:",
+        "items": {
+          "information": "Auskunft nach Art. 15 DSGVO",
+          "correction": "Berichtigung nach Art. 16 DSGVO",
+          "deletion": "Löschung nach Art. 17 DSGVO",
+          "restriction": "Einschränkung der Verarbeitung nach Art. 18 DSGVO",
+          "portability": "Datenübertragbarkeit nach Art. 20 DSGVO",
+          "objection": "Widerspruch gegen die Verarbeitung nach Art. 21 DSGVO"
+        },
+        "contact": "Zur Wahrnehmung Ihrer Rechte können Sie sich jederzeit an die oben genannte E-Mail-Adresse wenden.",
+        "authority": "Darüber hinaus haben Sie das Recht, sich bei einer Aufsichtsbehörde zu beschweren, z. B. bei:",
+        "authorityName": "Landesbeauftragte für Datenschutz und Informationsfreiheit Hessen",
+        "authorityAddress": "Postfach 3163, 65021 Wiesbaden",
+        "authorityLink": "https://datenschutz.hessen.de"
+      },
+      "storage": {
+        "title": "9. Speicherung und Löschung",
+        "text": "Personenbezogene Daten werden gelöscht, sobald der Zweck der Speicherung entfällt oder gesetzliche Aufbewahrungsfristen enden."
+      },
+      "security": {
+        "title": "10. Sicherheit",
+        "text": "Ich verwende technische und organisatorische Maßnahmen, um Ihre Daten gegen Manipulation, Verlust oder unbefugten Zugriff zu schützen. Die Verbindung zu dieser Website erfolgt verschlüsselt (SSL/TLS)."
+      }
+    }
+  }
+}
