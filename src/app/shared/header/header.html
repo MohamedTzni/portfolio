@@ -1,0 +1,15 @@
+<header class="header">
+    <div class="header__inner">
+        <div class="header__menu-group">
+            <app-language-switch></app-language-switch>
+            <app-menu></app-menu>
+        </div>
+        <app-logo class="header__logo"></app-logo>
+        <button class="header__burger-menu" (click)="toggleMenu()" [class.header__burger-menu--active]="isMenuOpen"
+            aria-label="Menu">
+            <img [src]="isMenuOpen ? '/assets/icon/burger_menu_press.png' : '/assets/icon/burger_menu_default.png'"
+                alt="Menu">
+        </button>
+    </div>
+    <app-burger-menu [isOpen]="isMenuOpen" (close)="closeMenu()"></app-burger-menu>
+</header>
