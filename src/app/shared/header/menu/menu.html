@@ -1,0 +1,7 @@
+<nav class="menu" aria-label="Primary">
+    <a *ngFor="let item of menuItems" class="menu__link" [class.menu__link--active]="activeItem === item.id"
+        [attr.href]="item.href" (click)="setActive(item.id)"
+        [attr.aria-current]="activeItem === item.id ? 'true' : null">
+        {{ item.translationKey | transloco }}
+    </a>
+</nav>
