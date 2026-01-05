@@ -1,0 +1,15 @@
+<div class="language-switch" role="group" aria-label="Language" (mouseenter)="isHovering = true"
+    (mouseleave)="isHovering = false">
+    <button type="button" class="language-switch__option"
+        [class.language-switch__option--active]="activeLanguage === 'en'"
+        [class.language-switch__option--highlighted]="isHovering && activeLanguage !== 'en'"
+        [attr.aria-pressed]="activeLanguage === 'en'" (click)="setLanguage('en')">
+        EN
+    </button>
+    <button type="button" class="language-switch__option"
+        [class.language-switch__option--active]="activeLanguage === 'de'"
+        [class.language-switch__option--highlighted]="isHovering && activeLanguage !== 'de'"
+        [attr.aria-pressed]="activeLanguage === 'de'" (click)="setLanguage('de')">
+        DE
+    </button>
+</div>
