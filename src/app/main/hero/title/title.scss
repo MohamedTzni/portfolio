@@ -1,0 +1,217 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(12px, 2vh, 20px);
+  max-width: min(820px, 100%);
+  margin: 0 auto;
+  text-align: center;
+  color: #d9d9d9;
+}
+
+.hero-title__subtitle {
+  font-family: 'Fira Code', monospace;
+  font-weight: 400;
+  font-size: clamp(1.25rem, 3vw, 2.5rem);
+  line-height: 1;
+  letter-spacing: 0.12em;
+  color: #d9d9d9;
+}
+
+.hero-title__headline {
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  font-size: clamp(3.4rem, 9vw, 7rem);
+  line-height: 1;
+  letter-spacing: -0.018em;
+  color: #d9d9d9;
+  margin: 0 0 clamp(24px, 6vh, 40px);
+  white-space: nowrap;
+  display: flex;
+  gap: 0.25em;
+}
+
+@keyframes name-blink {
+  0%, 40%, 100% { color: #d9d9d9; }
+  60%, 80% { color: #3dcfb6; }
+}
+
+.hero-title__firstname {
+  animation: name-blink 3s ease-in-out infinite;
+}
+
+.hero-title__lastname {
+  animation: name-blink 3s ease-in-out infinite 1.5s;
+}
+
+.hero-title__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(16px, 6vw, 48px);
+}
+
+.hero-title__button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 136px;
+  height: 48px;
+  padding: 0 24px;
+  border: 1px solid #ffffff;
+  border-radius: 999px;
+  background: transparent;
+  color: #ffffff;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: border-color 0.2s ease, color 0.2s ease;
+  overflow: hidden;
+}
+
+.hero-title__button-text {
+  position: relative;
+  display: block;
+}
+
+.hero-title__button--primary {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.hero-title__button:hover,
+.hero-title__button:focus-visible {
+  background: transparent;
+  border-color: #3dcfb6;
+  color: #3dcfb6;
+}
+
+.hero-title__button:hover .hero-title__button-text {
+  animation: slideTextLoop 2s linear infinite;
+}
+
+.hero-title__button--primary:hover .hero-title__button-text {
+  animation-duration: 3.5s;
+}
+
+@keyframes slideTextLoop {
+  0% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(-150%);
+  }
+}
+
+.hero-title__button:focus-visible {
+  outline: 2px solid rgba(61, 207, 182, 0.6);
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .hero-title__headline {
+    font-size: clamp(3rem, 12vw, 5.5rem);
+  }
+
+  .hero-title__actions {
+    gap: 16px;
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .hero-title__button {
+    flex: 1;
+    min-width: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title__subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-title__headline {
+    font-size: clamp(2.5rem, 13vw, 4rem);
+  }
+
+  .hero-title__actions {
+    flex-wrap: nowrap;
+    gap: clamp(8px, 3vw, 16px);
+    padding: 0 8px;
+  }
+
+  .hero-title__button {
+    border-color: #3dcfb6;
+    color: #3dcfb6;
+    flex: 1;
+    min-width: 0;
+    padding: 0 clamp(12px, 4vw, 24px);
+    font-size: clamp(0.875rem, 3.5vw, 1.125rem);
+    height: clamp(40px, 12vw, 48px);
+  }
+
+  .hero-title__button-text {
+    animation: slideTextLoop 5s linear infinite;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 350px) {
+  .hero-title__actions {
+    gap: 8px;
+  }
+
+  .hero-title__button {
+    padding: 0 12px;
+    font-size: 0.875rem;
+    height: 40px;
+  }
+}
+
+@media (max-height: 700px) {
+  .hero-title__headline {
+    margin-bottom: clamp(16px, 4vh, 24px);
+  }
+
+  .hero-title {
+    gap: clamp(8px, 1.5vh, 16px);
+  }
+}
+
+@media (max-height: 650px) {
+  .hero-title__headline {
+    margin-bottom: clamp(12px, 3vh, 20px);
+  }
+
+  .hero-title {
+    gap: clamp(6px, 1vh, 12px);
+  }
+}
+
+@media (max-width: 480px) and (max-height: 800px) {
+  .hero-title__headline {
+    margin-bottom: clamp(12px, 3vh, 20px);
+  }
+
+  .hero-title {
+    gap: clamp(8px, 1.5vh, 14px);
+  }
+}
+
+@media (max-width: 480px) and (max-height: 700px) {
+  .hero-title__headline {
+    margin-bottom: clamp(8px, 2vh, 16px);
+  }
+
+  .hero-title {
+    gap: clamp(4px, 1vh, 10px);
+  }
+}
