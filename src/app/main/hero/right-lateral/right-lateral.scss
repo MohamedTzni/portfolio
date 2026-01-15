@@ -1,0 +1,147 @@
+.right-lateral {
+  width: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.email {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font: 400 18px/1.2 Karla, sans-serif;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+:hover {
+  color: #3dcfb6;
+  transition: all 0.2s ease;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 32px;
+  height: auto;
+  overflow: visible;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: visible;
+  cursor: pointer;
+}
+
+.icon__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.icon__image--hover {
+  opacity: 0;
+}
+
+.icon__circle {
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 4px);
+  transform: translateY(-50%) scale(0.6);
+  width: 8px;
+  height: 8px;
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+}
+
+.icon:hover .icon__image--default {
+  opacity: 0;
+}
+
+.icon:hover .icon__image--hover {
+  opacity: 1;
+}
+
+.icon:hover .icon__circle {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+}
+
+.icon:focus-visible {
+  outline: none;
+}
+
+.icon:focus-visible .icon__image--default {
+  opacity: 0;
+}
+
+.icon:focus-visible .icon__image--hover,
+.icon:focus-visible .icon__circle {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+}
+
+.line {
+  width: 0;
+  height: 186px;
+  border-left: 1px solid #fff;
+}
+
+.icon--email {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .email {
+    display: none;
+  }
+
+  .icon--email {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .right-lateral {
+    transform: translateY(50px);
+  }
+}
+
+@media (max-height: 700px) {
+  .right-lateral {
+    transform: translateY(40px);
+  }
+}
+
+@media (max-height: 650px) {
+  .right-lateral {
+    transform: translateY(50px);
+  }
+}
+
+@media (max-width: 480px) and (max-height: 800px) {
+  .right-lateral {
+    transform: translateY(70px);
+  }
+}
+
+@media (max-width: 480px) and (max-height: 700px) {
+  .right-lateral {
+    transform: translateY(80px);
+  }
+}
