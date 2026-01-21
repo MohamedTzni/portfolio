@@ -1,0 +1,35 @@
+:host {
+  display: block;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 6vw, 3.5rem);
+}
+
+.about-me__container {
+  display: grid;
+  grid-template-columns: minmax(0, 568px) minmax(0, 568px);
+  gap: clamp(2.5rem, 7.5vw, 9rem);
+  width: min(1232px, 100%);
+  align-items: start;
+}
+
+@media (min-width: 1920px) {
+  .about-me__container {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    max-width: 1600px;
+    width: 100%;
+    gap: clamp(6rem, 8vw, 10rem);
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-me__container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: clamp(1.25rem, 3.75vw, 4.5rem);
+  }
+}
