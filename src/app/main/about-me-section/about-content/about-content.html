@@ -1,0 +1,38 @@
+<article class="about-me__panel" aria-labelledby="about-me-heading">
+    <span class="about-me__tag">{{ 'aboutMe.tag' | transloco }}</span>
+    <div class="about-me__card">
+        <header class="about-me__header">
+            <h2 class="about-me__title" id="about-me-heading">{{ 'aboutMe.title' | transloco }}</h2>
+            <p class="about-me__intro">
+                {{ 'aboutMe.intro' | transloco }}
+            </p>
+        </header>
+
+        <ul class="about-me__list" aria-label="Key facts about Daniel">
+            <li class="about-me__item">
+                <span class="about-me__icon" aria-hidden="true">
+                    <img src="assets/icon/hightlight-icon/location_icon.png" alt="" loading="lazy" />
+                </span>
+                <p>
+                    {{ 'aboutMe.highlights.location' | transloco }}
+                </p>
+            </li>
+            <li class="about-me__item">
+                <span class="about-me__icon" aria-hidden="true">
+                    <img src="assets/icon/hightlight-icon/cognition_icon.png" alt="" loading="lazy" />
+                </span>
+                <p>
+                    {{ 'aboutMe.highlights.mindset' | transloco }}
+                </p>
+            </li>
+            <li class="about-me__item">
+                <span class="about-me__icon" aria-hidden="true">
+                    <img src="assets/icon/hightlight-icon/quality_icon.png" alt="" loading="lazy" />
+                </span>
+                <p>
+                    {{ 'aboutMe.highlights.problem' | transloco }}
+                </p>
+            </li>
+        </ul>
+    </div>
+</article>
