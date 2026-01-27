@@ -1,0 +1,38 @@
+<section class="skills" id="skills" aria-labelledby="skills-section-heading">
+    <div class="skills__inner">
+        <div class="skills__panel skills__panel--info">
+            <div class="skills__section-heading" id="skills-section-heading">{{ 'skills.sectionHeading' | transloco }}
+            </div>
+            <article class="skills__info-card">
+                <h2 class="skills__headline">{{ 'skills.title' | transloco }}</h2>
+                <div class="skills__copy">
+                    <p>
+                        {{ 'skills.description' | transloco }}
+                    </p>
+                </div>
+                <div class="skills__cta-block">
+                    <h3 class="skills__cta-title">{{ 'skills.cta.title' | transloco }} <span
+                            class="skills__cta-highlight">{{ 'skills.cta.highlight' | transloco }}</span>
+                    </h3>
+                    <p class="skills__cta-text">
+                        {{ 'skills.cta.text' | transloco }}
+                    </p>
+                    <a class="skills__cta-button" href="#contact" aria-label="Contact me to talk about skills">
+                        <span class="skills__cta-button-text">{{ 'skills.cta.button' | transloco }}</span>
+                    </a>
+                </div>
+            </article>
+        </div>
+
+        <div class="skills__panel skills__panel--icons">
+            <ul class="skills__icons-grid" role="list">
+                <li class="skills__icon" *ngFor="let skill of skillIcons">
+                    <span class="skills__icon-image" aria-hidden="true">
+                        <img [src]="skill.icon" [alt]="skill.label" loading="lazy" />
+                    </span>
+                    <span class="skills__icon-label">{{ skill.label }}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

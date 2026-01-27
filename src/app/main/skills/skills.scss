@@ -1,0 +1,298 @@
+.skills {
+  max-width: 1920px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  scroll-margin-top: clamp(2rem, 4vw, 4rem);
+
+  &__inner {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(32px, 5vw, 72px);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 560px;
+    padding: 0 clamp(32px, 5vw, 72px) clamp(32px, 5vw, 72px);
+    border-radius: 36px;
+    background: radial-gradient(
+      22.43% 43.85% at 1.22% 52.45%,
+      rgba(8, 70, 59, 0.3) 0%,
+      #1c1c1c 100%
+    );
+    box-sizing: border-box;
+
+    @media (min-width: 1920px) {
+      gap: clamp(80px, 8vw, 120px);
+    }
+
+    @media (min-width: 1921px) {
+      background: radial-gradient(
+        22.43% 43.85% at 18% 52.45%,
+        rgba(8, 70, 59, 0.3) 0%,
+        #1c1c1c 100%
+      );
+    }
+
+    @media (min-width: 2400px) {
+      background: radial-gradient(
+        22.43% 43.85% at 25% 52.45%,
+        rgba(8, 70, 59, 0.3) 0%,
+        #1c1c1c 100%
+      );
+    }
+  }
+
+  &__panel {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(12px, 2vw, 20px);
+    color: #ffffff;
+
+    &--info {
+      flex: 1 1 410px;
+      max-width: 540px;
+      align-self: stretch;
+      justify-content: flex-start;
+    }
+
+    &--icons {
+      flex: 1 1 520px;
+      max-width: 680px;
+    }
+
+    @media (min-width: 1920px) {
+      &--info {
+        max-width: 650px;
+      }
+
+      &--icons {
+        max-width: 800px;
+      }
+    }
+  }
+
+  &__section-heading {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: clamp(18px, 3vw, 24px);
+    line-height: 1.2;
+    color: #3dcfb6;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  &__info-card {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(24px, 4vw, 40px);
+    padding: clamp(24px, 4vw, 32px);
+    border: 1px solid #3dcfb6;
+    border-radius: 30px;
+    background: rgba(61, 207, 182, 0.1);
+    min-height: clamp(360px, 50vw, 520px);
+    box-sizing: border-box;
+
+    @media (min-width: 1920px) {
+      gap: clamp(32px, 4vw, 48px);
+      padding: clamp(32px, 4vw, 40px);
+    }
+  }
+
+  &__headline {
+    margin: 0;
+    font-family: 'Fira Code', monospace;
+    font-weight: 700;
+    font-size: clamp(40px, 6vw, 64px);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: #3dcfb6;
+
+    @media (min-width: 1920px) {
+      font-size: clamp(56px, 6vw, 72px);
+    }
+  }
+
+  &__copy {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: clamp(16px, 2.2vw, 18px);
+    line-height: 1.2;
+    color: #ffffff;
+    text-align: justify;
+
+    p {
+      margin: 0;
+    }
+
+    @media (min-width: 1920px) {
+      font-size: clamp(18px, 2.2vw, 20px);
+      line-height: 1.4;
+    }
+  }
+
+  &__cta-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    max-width: 360px;
+  }
+
+  &__cta-title {
+    margin: 0;
+    font-family: 'Fira Code', monospace;
+    font-weight: 700;
+    font-size: clamp(20px, 3vw, 24px);
+    line-height: 1.2;
+    color: #ffffff;
+    text-align: left;
+
+    .skills__cta-highlight {
+      color: #3dcfb6;
+    }
+
+    @media (min-width: 1920px) {
+      font-size: clamp(24px, 3vw, 28px);
+    }
+  }
+
+  &__cta-text {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: clamp(14px, 2vw, 16px);
+    line-height: 1.2;
+    color: #ffffff;
+    text-align: left;
+
+    @media (min-width: 1920px) {
+      font-size: clamp(16px, 2vw, 18px);
+      line-height: 1.4;
+    }
+  }
+
+  &__cta-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 24px;
+    height: 48px;
+    margin-top: 32px;
+    border-radius: 100px;
+    border: 1px solid #ffffff;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #ffffff;
+    text-decoration: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    overflow: hidden;
+
+    &:hover,
+    &:focus-visible {
+      border-color: #3dcfb6;
+      color: #3dcfb6;
+      outline: none;
+    }
+
+    &:hover .skills__cta-button-text {
+      animation: slideTextLoop 2s linear infinite;
+    }
+  }
+
+  &__cta-button-text {
+    position: relative;
+    display: block;
+  }
+
+  @keyframes slideTextLoop {
+    0% {
+      transform: translateX(150%);
+    }
+    100% {
+      transform: translateX(-150%);
+    }
+  }
+
+  &__icons-grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: clamp(24px, 4vw, 40px) clamp(24px, 5vw, 72px);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 420px) {
+      gap: 0;
+    }
+
+    @media (max-width: 360px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 104px;
+    min-height: 116px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__icon-image {
+    display: grid;
+    place-items: center;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    transition: border-color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__icon-label {
+    font-family: 'Fira Code', monospace;
+    font-weight: 400;
+    font-size: clamp(16px, 2.4vw, 18px);
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+
+    @media (min-width: 1920px) {
+      font-size: clamp(18px, 2.4vw, 20px);
+    }
+  }
+
+  &__icon:hover &__icon-image,
+  &__icon:focus-visible &__icon-image {
+    transform: translateY(-4px);
+  }
+
+  @media (max-width: 480px) {
+    &__cta-button {
+      border-color: #3dcfb6;
+      color: #3dcfb6;
+    }
+
+    &__cta-button-text {
+      animation: slideTextLoop 5s linear infinite;
+    }
+  }
+}
