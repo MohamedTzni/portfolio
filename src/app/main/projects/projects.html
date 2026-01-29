@@ -1,0 +1,45 @@
+<section class="projects" id="projects">
+    <div class="projects__container">
+        <header class="projects__header">
+            <span class="projects__eyebrow">{{ 'projects.eyebrow' | transloco }}</span>
+            <h2 class="projects__title">{{ 'projects.title' | transloco }}</h2>
+            <p class="projects__lead">
+                {{ 'projects.lead' | transloco }}
+            </p>
+        </header>
+
+        <div class="projects__layout" #projectsLayout>
+            <div class="projects__list" role="list">
+                <article class="projects__item" *ngFor="let project of projects; let i = index" role="listitem"
+                    #projectItem (mouseenter)="showPreview(i, projectItem)" (mouseleave)="hidePreview()"
+                    (focus)="showPreview(i, projectItem)" (blur)="hidePreview()" (click)="openProjectDialog(i)"
+                    (keydown)="activateProject($event, i)" tabindex="0" role="button" aria-haspopup="dialog"
+                    [attr.aria-expanded]="activeDialogIndex === i" [class.is-active]="selectedProjectIndex === i">
+                    <h3 class="projects__item-title">
+                        <span class="projects__item-label">{{ project.title | transloco }}</span>
+                        <img class="projects__item-icon" src="assets/icon/project-icon/arrow_outward.png" alt=""
+                            aria-hidden="true" />
+                    </h3>
+
+                    <ul class="projects__tech" aria-label="Technologies">
+                        <li class="projects__tech-item" *ngFor="let tech of project.technologies">
+                            <span>{{ tech }}</span>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+
+            <aside class="projects__preview" aria-live="polite" #projectsPreview [style.top.px]="previewTop">
+                <div class="projects__preview-card" *ngIf="selectedProject as project">
+                    <div class="projects__preview-frame">
+                        <img class="projects__preview-img" [src]="project.preview" [alt]="project.previewAlt" />
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <app-project-dialog [project]="activeDialogProject" [projectIndex]="activeDialogIndex"
+        [isOpen]="activeDialogIndex !== null" (close)="closeProjectDialog()" (nextProject)="openNextProject()">
+    </app-project-dialog>
+</section>
