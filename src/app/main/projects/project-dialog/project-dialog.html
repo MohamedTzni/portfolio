@@ -1,0 +1,28 @@
+<ng-container *ngIf="isOpen && project">
+    <div class="dialog-backdrop" (click)="onBackdropClick()" aria-hidden="true"></div>
+
+    <div class="dialog-wrapper" (click)="onBackdropClick()">
+        <article class="dialog" role="dialog" aria-modal="true" [attr.aria-label]="project.title"
+            (click)="onDialogClick($event)">
+            <button class="dialog__close" type="button" (click)="onClose()" aria-label="Close project dialog">
+                <img class="dialog__close-icon dialog__close-icon--default"
+                    src="assets/icon/project-icon/close_button.png" alt="" aria-hidden="true" />
+                <img class="dialog__close-icon dialog__close-icon--hover"
+                    src="assets/icon/project-icon/close_button_hover.png" alt="" aria-hidden="true" />
+            </button>
+
+            <app-project-info [project]="project" [projectIndex]="projectIndex!" />
+
+            <div class="dialog__visual">
+                <img class="dialog__image" [src]="project.preview" [alt]="project.previewAlt" />
+            </div>
+
+            <button class="dialog__next" type="button" (click)="onNext($event)" (mouseenter)="setNextHover(true)"
+                (mouseleave)="setNextHover(false)" (focus)="setNextHover(true)" (blur)="setNextHover(false)">
+                <span>{{ 'projects.dialog.nextProject' | transloco }}</span>
+                <img [src]="isNextHovered ? 'assets/icon/project-icon/arrow_right_hover.png' : 'assets/icon/project-icon/arrow_right.png'"
+                    alt="" aria-hidden="true" />
+            </button>
+        </article>
+    </div>
+</ng-container>
