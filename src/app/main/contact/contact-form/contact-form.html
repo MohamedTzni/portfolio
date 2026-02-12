@@ -1,0 +1,63 @@
+<form class="contact-form">
+
+    <div class="status-message success" *ngIf="submitSuccess">
+        <p>{{ 'contact.form.successMessage' | transloco }}</p>
+    </div>
+
+
+    <div class="status-message error" *ngIf="submitError">
+        <p>{{ 'contact.form.errorMessage' | transloco }}</p>
+    </div>
+
+    <div class="form-fields">
+        <div class="form-field" [class.error]="nameError">
+            <div class="field-content">
+                <label for="name" class="field-label">{{ 'contact.form.nameLabel' | transloco }}</label>
+                <input type="text" id="name" name="name" class="field-input" [(ngModel)]="name" (input)="onNameInput()"
+                    (focus)="onNameInput()"
+                    [placeholder]="nameError ? nameErrorMessage : ('contact.form.namePlaceholder' | transloco)" />
+            </div>
+        </div>
+
+        <div class="form-field" [class.error]="emailError">
+            <div class="field-content">
+                <label for="email" class="field-label">{{ 'contact.form.emailLabel' | transloco }}</label>
+                <input type="email" id="email" name="email" class="field-input" [(ngModel)]="email"
+                    (input)="onEmailInput()" (focus)="onEmailInput()"
+                    [placeholder]="emailError ? emailErrorMessage : ('contact.form.emailPlaceholder' | transloco)" />
+            </div>
+        </div>
+
+        <div class="form-field" [class.error]="messageError">
+            <div class="field-content">
+                <label for="message" class="field-label">{{ 'contact.form.messageLabel' | transloco }}</label>
+                <input type="text" id="message" name="message" class="field-input" [(ngModel)]="message"
+                    (input)="onMessageInput()" (focus)="onMessageInput()"
+                    [placeholder]="messageError ? messageErrorMessage : ('contact.form.messagePlaceholder' | transloco)" />
+            </div>
+        </div>
+    </div>
+
+    <div class="form-footer" [class.error]="privacyError">
+        <div class="privacy-section">
+            <div class="checkbox-wrapper">
+                <input type="checkbox" id="privacy" name="privacy" class="checkbox-input" [(ngModel)]="privacyAccepted"
+                    (change)="onPrivacyChange()" />
+                <label for="privacy" class="checkbox-label">
+                    <span class="checkbox-text">{{ 'contact.form.privacyText1' | transloco }}</span><a
+                        routerLink="/privacy-policy" class="privacy-link">{{ 'contact.form.privacyLink' | transloco
+                        }}</a><span class="checkbox-text">{{ 'contact.form.privacyText2' | transloco }}</span>
+                </label>
+            </div>
+            <p class="error-message" [class.show]="privacyError">{{ 'contact.form.privacyError' | transloco }}</p>
+        </div>
+
+        <div class="button-wrapper">
+            <button type="button" class="submit-button" [class.active]="privacyAccepted && !isSubmitting"
+                [disabled]="isSubmitting" (click)="onSubmit()">
+                <span class="button-text" *ngIf="!isSubmitting">{{ 'contact.form.submit' | transloco }}</span>
+                <span class="button-text" *ngIf="isSubmitting">{{ 'contact.form.sending' | transloco }}</span>
+            </button>
+        </div>
+    </div>
+</form>

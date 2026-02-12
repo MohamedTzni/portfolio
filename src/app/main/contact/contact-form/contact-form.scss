@@ -1,0 +1,440 @@
+$primary-color: #3dcfb6;
+$primary-color-faded: rgba(61, 207, 182, 0.5);
+$primary-color-glow: rgba(61, 207, 182, 0.6);
+$text-color-white: #ffffff;
+$text-color-light: rgba(255, 255, 255, 0.8);
+$text-color-faded: rgba(255, 255, 255, 0.5);
+$error-color: rgba(236, 123, 123, 0.8);
+$error-color-solid: #ec7b7b;
+
+$font-primary: 'Karla', sans-serif;
+$font-code: 'Fira Code', monospace;
+
+$breakpoint-tablet: 768px;
+
+$gap-large: 40px;
+$gap-medium: 16px;
+$gap-small: 10px;
+$gap-tiny: 8px;
+
+$line-height-default: 120%;
+$transition-default: 0.3s ease;
+$transition-fast: 0.2s ease;
+
+.contact-form {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: $gap-large;
+  width: 100%;
+  max-width: 616px;
+
+  @media (min-width: 1920px) {
+    max-width: 700px;
+    gap: 48px;
+  }
+}
+
+.status-message {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: $font-primary;
+  font-size: 16px;
+  line-height: $line-height-default;
+  text-align: center;
+  animation: slideIn 0.3s ease;
+
+  &.success {
+    background-color: rgba(61, 207, 182, 0.1);
+    border: 1px solid $primary-color;
+    color: $primary-color;
+  }
+
+  &.error {
+    background-color: rgba(236, 123, 123, 0.1);
+    border: 1px solid $error-color-solid;
+    color: $error-color-solid;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  width: 100%;
+}
+
+.form-field {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  gap: $gap-small;
+  width: 100%;
+  border-width: 1px 0px;
+  border-style: solid;
+  border-color: $primary-color-faded;
+  transition: border-color $transition-default;
+
+  &:hover:not(.error),
+  &:focus-within:not(.error) {
+    border-color: $primary-color;
+
+    .field-input {
+      color: $text-color-white;
+
+      &::placeholder {
+        color: $text-color-white;
+      }
+    }
+  }
+
+  &.error {
+    border-color: $primary-color;
+
+    .field-input {
+      color: $error-color;
+
+      &::placeholder {
+        color: $error-color;
+      }
+    }
+
+    &:hover,
+    &:focus-within {
+      border-color: $primary-color;
+
+      .field-input {
+        color: $error-color;
+
+        &::placeholder {
+          color: $error-color;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    padding: 24px 16px;
+  }
+}
+
+.field-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: $gap-medium;
+  width: 100%;
+}
+
+.field-label {
+  margin: 0;
+  font-family: $font-code;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: $line-height-default;
+  color: $primary-color;
+
+  @media (min-width: 1920px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    font-size: 20px;
+  }
+}
+
+.field-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: $line-height-default;
+  color: $text-color-light;
+
+  &::placeholder {
+    color: $text-color-light;
+  }
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    -webkit-text-fill-color: $text-color-light !important;
+    background-color: transparent !important;
+    background-clip: text !important;
+    transition: background-color 5000s ease-in-out 0s;
+    font-family: $font-primary;
+    font-size: 18px;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 20px;
+    line-height: 140%;
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    font-size: 16px;
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      font-size: 16px;
+    }
+  }
+}
+
+.form-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: $gap-medium;
+  width: 100%;
+  max-width: 616px;
+
+  @media (min-width: 1920px) {
+    max-width: 700px;
+  }
+}
+
+.privacy-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: $gap-tiny;
+  width: 100%;
+  align-self: stretch;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: $gap-tiny;
+  width: 100%;
+}
+
+.checkbox-input {
+  width: 24px;
+  height: 24px;
+  flex: none;
+  appearance: none;
+  cursor: pointer;
+  background-image: url('/assets/icon/contact-icon/checkbox_default.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image $transition-fast;
+
+  &:hover {
+    background-image: url('/assets/icon/contact-icon/checkbox_default_hover.png');
+  }
+
+  &:checked {
+    background-image: url('/assets/icon/contact-icon/checkbox_checked.png');
+
+    &:hover {
+      background-image: url('/assets/icon/contact-icon/checkbox_checked_hover.png');
+    }
+  }
+}
+
+.checkbox-label {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+  padding: 0;
+  row-gap: 0;
+  flex: 1;
+  cursor: pointer;
+  white-space: normal;
+}
+
+.checkbox-text {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: $line-height-default;
+  color: $text-color-white;
+  margin-right: 4px;
+
+  @media (max-width: $breakpoint-tablet) {
+    font-size: 14px;
+  }
+}
+
+.privacy-link {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 5px 4px;
+  gap: $gap-small;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+  font-family: $font-code;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: $line-height-default;
+  letter-spacing: -0.03em;
+  color: $primary-color;
+  text-decoration: none;
+  transition: all $transition-default;
+
+  &:hover {
+    border-bottom-color: $primary-color;
+    color: $text-color-white;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    font-size: 14px;
+  }
+}
+
+.error-message {
+  margin: 0;
+  width: 205px;
+  height: 17px;
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: $line-height-default;
+  color: transparent;
+  transition: color $transition-default;
+
+  &.show {
+    color: $error-color-solid;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    width: auto;
+    height: auto;
+  }
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: $gap-small;
+  width: 139px;
+  height: 48px;
+}
+
+.submit-button {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24px;
+  gap: $gap-small;
+  width: 139px;
+  height: 48px;
+  background: transparent;
+  border: 1px solid $text-color-faded;
+  border-radius: 100px;
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: $line-height-default;
+  color: $text-color-light;
+  cursor: default;
+  transition: border-color $transition-fast, color $transition-fast;
+  align-self: stretch;
+  overflow: hidden;
+
+  &.active {
+    border-color: $text-color-white;
+    color: $text-color-white;
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible {
+      background: transparent;
+      border-color: $primary-color;
+      color: $primary-color;
+    }
+
+    &:hover .button-text {
+      animation: slideTextLoop 2s linear infinite;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $primary-color-glow;
+      outline-offset: 3px;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    font-size: 16px;
+    width: 120px;
+    min-width: 120px;
+  }
+}
+
+.button-text {
+  position: relative;
+  display: block;
+}
+
+@keyframes slideTextLoop {
+  0% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(-150%);
+  }
+}
