@@ -1,0 +1,46 @@
+<section class="legal-notice-section">
+    <div class="legal-notice-container">
+        <button class="back-button" (click)="goBack()">
+            <img src="assets/icon/project-icon/arrow_left.png" alt="Back" class="arrow-icon">
+        </button>
+        <h1 class="legal-notice-title">{{ 'legalNotice.title' | transloco }}</h1>
+
+        <div class="legal-notice-text">
+            <div class="text-content">
+                <div class="text-section">
+                    <h2>{{ 'legalNotice.sections.imprint.title' | transloco }}</h2>
+                    <p class="imprint-info">
+                        {{ 'legalNotice.sections.imprint.name' | transloco }}<br>
+                        {{ 'legalNotice.sections.imprint.address' | transloco }}<br>
+                        {{ 'legalNotice.sections.imprint.city' | transloco }}<br>
+                        {{ 'legalNotice.sections.imprint.email' | transloco }}
+                    </p>
+                    <p>{{ 'legalNotice.sections.imprint.purpose' | transloco }}</p>
+                </div>
+
+                <div class="text-section">
+                    <h2>{{ 'legalNotice.sections.disclaimer.title' | transloco }}</h2>
+                    <p>{{ 'legalNotice.sections.disclaimer.text' | transloco }}</p>
+                </div>
+
+                <div class="text-section">
+                    <h2>{{ 'legalNotice.sections.liabilityLinks.title' | transloco }}</h2>
+                    <p>{{ 'legalNotice.sections.liabilityLinks.text' | transloco }}</p>
+                </div>
+
+                <div class="text-section">
+                    <h2>{{ 'legalNotice.sections.copyright.title' | transloco }}</h2>
+                    <p>{{ 'legalNotice.sections.copyright.text' | transloco }}</p>
+                </div>
+
+                <div class="text-section">
+                    <h2>{{ 'legalNotice.sections.contact.title' | transloco }}</h2>
+                    <p>{{ 'legalNotice.sections.contact.text' | transloco }}</p>
+                </div>
+
+                <p class="date-info">{{ 'legalNotice.sections.date' | transloco }}</p>
+            </div>
+        </div>
+    </div>
+    <app-footer></app-footer>
+</section>

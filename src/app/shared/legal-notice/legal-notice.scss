@@ -1,0 +1,281 @@
+.legal-notice-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(55.22deg, #1c1c1c 36.26%, #08463b 93.28%);
+  overflow-y: auto;
+}
+
+.legal-notice-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 80px 0;
+  gap: 64px;
+  max-width: 1248px;
+  width: 100%;
+  margin: 149px auto 0;
+  flex: 1;
+}
+
+.back-button {
+  display: none;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 12px 0;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateX(-4px);
+
+    .arrow-icon {
+      content: url('/assets/icon/project-icon/arrow_left_hover.png');
+    }
+  }
+
+  .arrow-icon {
+    width: 32px;
+    height: 32px;
+    display: block;
+  }
+}
+
+.legal-notice-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 20px;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+
+  font-family: 'Fira Code', monospace;
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(20px, 5.5vw, 64px);
+  line-height: 120%;
+  color: #3dcfb6;
+  margin: 0;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.legal-notice-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 24px;
+  width: 100%;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 120px 0;
+  gap: 24px;
+  width: 100%;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 16px;
+  max-width: 968px;
+
+  flex: none;
+  flex-grow: 0;
+
+  h2 {
+    font-family: 'Karla', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 120%;
+    color: #ffffff;
+    margin: 0;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  p {
+    font-family: 'Karla', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #3dcfb6;
+    margin: 0;
+
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .imprint-info {
+    color: #3dcfb6;
+  }
+
+  .highlight {
+    color: #ffffff;
+    font-weight: 500;
+  }
+
+  .date-info {
+    margin-top: 8px;
+  }
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  margin-top: 32px;
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+
+  p {
+    font-family: 'Fira Code', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #3dcfb6;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .back-button {
+    display: flex;
+    align-self: flex-start;
+    padding: 12px 0;
+  }
+
+  .legal-notice-container {
+    max-width: 90%;
+    margin-top: 100px;
+    gap: 32px;
+    padding-bottom: 60px;
+  }
+
+  .legal-notice-title {
+    font-size: clamp(18px, 6vw, 36px);
+    color: #ffffff;
+    justify-content: flex-start;
+    text-align: left;
+    margin-top: 0;
+    padding: 0 16px;
+  }
+
+  .text-content {
+    padding: 0 24px;
+  }
+
+  .text-section {
+    max-width: 100%;
+
+    h2 {
+      font-size: 17px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .copyright p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .legal-notice-container {
+    max-width: 1600px;
+    margin-top: 180px;
+    gap: 80px;
+    padding-bottom: 100px;
+  }
+
+  .legal-notice-title {
+    font-size: 72px;
+  }
+
+  .text-content {
+    padding: 0 160px;
+    gap: 32px;
+  }
+
+  .text-section {
+    max-width: 1200px;
+    gap: 20px;
+
+    h2 {
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 140%;
+    }
+  }
+
+  .copyright p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 390px) {
+  .legal-notice-container {
+    margin-top: 80px;
+    gap: 24px;
+    padding-bottom: 40px;
+  }
+
+  .legal-notice-title {
+    font-size: clamp(16px, 7vw, 28px);
+  }
+
+  .text-content {
+    padding: 0 16px;
+    gap: 20px;
+  }
+
+  .text-section {
+    gap: 12px;
+
+    h2 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 13px;
+    }
+  }
+
+  .copyright p {
+    font-size: 14px;
+  }
+}
