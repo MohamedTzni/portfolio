@@ -1,8 +1,11 @@
-import { Component } from '@angular/core';
+﻿import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   standalone: true,
   selector: 'app-left-lateral',
-  template: '<div></div>',
+  imports: [],
+  templateUrl: './left-lateral.html',
+  styleUrl: './left-lateral.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LeftLateral {}

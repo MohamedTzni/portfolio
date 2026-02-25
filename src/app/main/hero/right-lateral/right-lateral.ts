@@ -1,8 +1,29 @@
-import { Component } from '@angular/core';
+﻿import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   standalone: true,
   selector: 'app-right-lateral',
-  template: '<div></div>',
+  imports: [],
+  templateUrl: './right-lateral.html',
+  styleUrl: './right-lateral.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class RightLateral {}
+export class RightLateral {
+  readonly email = 'KONTAKT@MOHAMEDTOUZANI.DE';
+  readonly mailtoHref = `mailto:${this.email}`;
+
+  readonly socialLinks = [
+    {
+      label: 'GitHub',
+      href: 'https://github.com/yourusername',
+      icon: 'assets/icon/github_icon.png',
+      hoverIcon: 'assets/icon/github_hover.png',
+    },
+    {
+      label: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/yourprofile',
+      icon: 'assets/icon/linkedin_icon.png',
+      hoverIcon: 'assets/icon/linkedin_hover.png',
+    },
+  ];
+}
