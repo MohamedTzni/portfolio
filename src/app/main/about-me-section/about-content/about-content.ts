@@ -1,8 +1,11 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
+import { TranslocoPipe } from '@jsverse/transloco';
 
 @Component({
   standalone: true,
   selector: 'app-about-content',
-  template: '<div></div>',
+  imports: [TranslocoPipe],
+  templateUrl: './about-content.html',
+  styleUrl: './about-content.scss',
 })
 export class AboutContent {}
