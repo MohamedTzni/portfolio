@@ -1,8 +1,25 @@
-﻿import { Component } from '@angular/core';
+﻿import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Footer } from '../footer/footer';
+import { Router } from '@angular/router';
+import { TranslocoPipe } from '@jsverse/transloco';
 
 @Component({
-  standalone: true,
   selector: 'app-privacy-policy',
-  template: '<section></section>',
+  imports: [Footer, TranslocoPipe],
+  templateUrl: './privacy-policy.html',
+  styleUrl: './privacy-policy.scss',
+  encapsulation: ViewEncapsulation.None,
 })
-export class PrivacyPolicy {}
+export class PrivacyPolicy implements OnInit {
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  goBack(): void {
+    this.router.navigate(['/']).then(() => {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    });
+  }
+}
