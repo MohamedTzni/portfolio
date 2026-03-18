@@ -67,6 +67,7 @@ export class App implements AfterViewInit, OnDestroy {
     this.renderer.removeClass(document.body, 'cursor-hidden');
   }
 
+  /** Sets cursor to viewport center on init. */
   private initializeCursor(): void {
     const centerX = window.innerWidth / 2;
     const centerY = window.innerHeight / 2;
@@ -94,3 +95,4 @@ export class App implements AfterViewInit, OnDestroy {
     this.renderer[method](this.cursorShadow.nativeElement, 'cursor-hover');
   }
 }
+
