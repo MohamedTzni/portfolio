@@ -128,3 +128,13 @@ body.touch-device {
     -webkit-tap-highlight-color: rgba(61, 207, 182, 0.2);
   }
 }
+
+@media print {
+  .cursor-shadow {
+    display: none !important;
+  }
+
+  app-header {
+    position: static !important;
+  }
+}
