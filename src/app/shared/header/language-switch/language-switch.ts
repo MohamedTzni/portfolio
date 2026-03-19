@@ -11,7 +11,7 @@ import { TranslocoService } from '@jsverse/transloco';
 export class LanguageSwitch {
   private translocoService = inject(TranslocoService);
 
-  activeLanguage: 'en' | 'de' = 'de';
+  activeLanguage: 'en' | 'de' = 'en';
   isHovering = false;
 
   ngOnInit() {
@@ -41,3 +41,4 @@ export class LanguageSwitch {
     localStorage.setItem('preferredLanguage', language);
   }
 }
+
