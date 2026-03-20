@@ -17,5 +17,5 @@ export class Marquee {
     'hero.marquee.openToWork',
   ];
 
-  readonly repeatedItems = [...this.items, ...this.items];
+  readonly repeatedItems: string[] = [...this.items, ...this.items];
 }
