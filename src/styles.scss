@@ -138,3 +138,10 @@ body.touch-device {
     position: static !important;
   }
 }
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid rgba(61, 207, 182, 0.6);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
