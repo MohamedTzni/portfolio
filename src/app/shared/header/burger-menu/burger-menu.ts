@@ -109,5 +109,6 @@ export class BurgerMenu implements OnChanges, OnDestroy {
     }
     this.currentLanguage = lang;
     this.translocoService.setActiveLang(lang);
+    localStorage.setItem('preferredLanguage', lang);
   }
 }
