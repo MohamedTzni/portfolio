@@ -145,3 +145,7 @@ button:focus-visible {
   outline-offset: 3px;
   border-radius: 2px;
 }
+
+section[id] {
+  scroll-margin-top: 80px;
+}
