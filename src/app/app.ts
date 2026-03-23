@@ -7,10 +7,11 @@
   OnDestroy,
   Renderer2,
   HostListener,
+  inject,
 } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
 import { Header } from './shared/header/header';
+import { BodyScrollService } from './shared/services/body-scroll.service';
 
 @Component({
   standalone: true,
@@ -24,6 +25,7 @@ export class App implements AfterViewInit, OnDestroy {
 
   @ViewChild('cursorShadow') cursorShadow!: ElementRef<HTMLDivElement>;
   private isTouchDevice = false;
+  private readonly bodyScrollService = inject(BodyScrollService);
 
   constructor(private renderer: Renderer2) {
     this.detectTouchDevice();
@@ -46,7 +48,9 @@ export class App implements AfterViewInit, OnDestroy {
     }
   }
 
-  ngOnDestroy() {}
+  ngOnDestroy() {
+    this.bodyScrollService.forceUnlock();
+  }
 
   @HostListener('document:mousemove', ['$event'])
   onMouseMove(event: MouseEvent) {
@@ -95,4 +99,3 @@ export class App implements AfterViewInit, OnDestroy {
     this.renderer[method](this.cursorShadow.nativeElement, 'cursor-hover');
   }
 }
-
