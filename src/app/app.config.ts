@@ -11,6 +11,11 @@ import { TranslocoHttpLoader } from './transloco-loader';
 
 import { routes } from './app.routes';
 
+/**
+ * Retrieves the initial language preference for the application.
+ * Checks localStorage for a saved language preference.
+ * Falls back to 'en' if no preference is found.
+ */
 const getInitialLanguage = (): string => {
   if (typeof window !== 'undefined' && typeof localStorage !== 'undefined') {
     return localStorage.getItem('preferredLanguage') || 'en';
@@ -18,6 +23,9 @@ const getInitialLanguage = (): string => {
   return 'en';
 };
 
+/**
+ * Main application configuration.
+ */
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
