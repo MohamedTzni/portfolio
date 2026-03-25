@@ -1,0 +1,22 @@
+﻿# Angular build output
+dist/
+.angular/cache/
+
+# Dependencies
+node_modules/
+
+# IDE
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
