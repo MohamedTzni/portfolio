@@ -35,7 +35,7 @@ export class ProjectsService {
       ],
       preview: 'assets/img/projects/el-pollo-loco.png',
       previewAlt: 'El Pollo Loco gameplay preview',
-      githubUrl: 'https://github.com/yourusername/pokedex',
+      githubUrl: 'https://github.com/MohamedTzni/el-pollo-loco',
       liveUrl: 'https://yourwebsite.com/pokedex',
     },
     {
@@ -72,7 +72,7 @@ export class ProjectsService {
       ],
       preview: 'assets/img/projects/join.png',
       previewAlt: 'Join project board preview',
-      githubUrl: 'https://github.com/yourusername/elpolloloco',
+      githubUrl: 'https://github.com/MohamedTzni/join',
       liveUrl: 'https://yourwebsite.com/goblin_slayer',
     },
     {
