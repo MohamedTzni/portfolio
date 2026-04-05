@@ -65,7 +65,7 @@ $accent: #3dcfb6;
   max-width: 456px;
   font-size: clamp(1rem, 2.4vw, 1.125rem);
   line-height: 1.2;
-  text-align: justify;
+  text-align: left;
   color: var(--color-text);
 
   @media (min-width: 1920px) {
