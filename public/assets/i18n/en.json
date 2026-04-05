@@ -37,11 +37,11 @@
   "skills": {
     "sectionHeading": "Technologies",
     "title": "Skill Set",
-    "description": "An overview of my skills. I work with modern frontend and backend technologies, focusing on clean, scalable code. Continuous learning is part of my workflow — I stay flexible and adapt quickly to new developments.",
+    "description": "An overview of my skills. I work with modern frontend and backend technologies and focus on clean and scalable code. Continuous learning is part of my daily work. I stay flexible and adapt quickly to new developments.",
     "cta": {
       "title": "Missing",
       "highlight": "a specific skill?",
-      "text": "Feel free to reach out. I’m always expanding my knowledge and learning new technologies with purpose.",
+      "text": "Feel free to reach out. I continuously expand my knowledge and quickly adapt to new technologies in a focused and efficient way.",
       "button": "Get in touch"
     }
   },
