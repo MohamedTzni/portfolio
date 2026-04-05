@@ -62,8 +62,8 @@
     },
     "join": {
       "title": "Join",
-      "subtitle": "Projektmanagement-Tool",
-      "description": "Ein kollaboratives Kanban-Board zur Aufgabenverwaltung. Nutzer können Tasks erstellen, zuweisen und per Drag-and-Drop organisieren – entwickelt mit HTML, CSS und JavaScript."
+      "subtitle": "Projektmanagement Tool",
+      "description": "Ein kollaboratives Kanban-Board zur Aufgabenverwaltung. Nutzer können Tasks erstellen, zuweisen und per Drag and Drop organisieren – entwickelt mit Angular, TypeScript, Firebase, HTML und CSS."
     },
     "placeholder": {
       "title": "Placeholder",
