@@ -42,8 +42,23 @@ export class ProjectsService {
       title: 'projects.join.title',
       subtitle: 'projects.join.subtitle',
       description: 'projects.join.description',
-      technologies: ['CSS', 'HTML', 'JavaScript', 'API'],
+      technologies: ['Angular', 'TypeScript', 'Firebase', 'CSS', 'HTML'],
       stack: [
+        {
+          label: 'Angular',
+          icon: 'assets/icon/skill-icon/angular_icon.png',
+          alt: 'Angular icon',
+        },
+        {
+          label: 'TypeScript',
+          icon: 'assets/icon/skill-icon/typescript_icon.png',
+          alt: 'TypeScript icon',
+        },
+        {
+          label: 'Firebase',
+          icon: 'assets/icon/skill-icon/firebase_icon.png',
+          alt: 'Firebase icon',
+        },
         {
           label: 'CSS',
           icon: 'assets/icon/skill-icon/css_icon.png',
@@ -53,11 +68,6 @@ export class ProjectsService {
           label: 'HTML',
           icon: 'assets/icon/skill-icon/html_icon.png',
           alt: 'HTML icon',
-        },
-        {
-          label: 'JavaScript',
-          icon: 'assets/icon/skill-icon/javascript_icon.png',
-          alt: 'JavaScript icon',
         },
       ],
       preview: 'assets/img/projects/join.png',
