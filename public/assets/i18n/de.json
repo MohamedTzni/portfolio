@@ -55,15 +55,15 @@
       "liveTest": "Live-Demo",
       "nextProject": "Nächstes Projekt"
     },
-    "pokedex": {
+    "elPolloLoco": {
       "title": "El Pollo Loco",
-      "subtitle": "API-basierter Pokédex",
-      "description": "Ein responsiver Pokédex auf Basis der PokéAPI. Nutzer können Pokémon suchen, filtern und Statistiken erkunden – mit flüssigen Animationen und Offline-Caching."
-    },
-    "goblinSlayer": {
-      "title": "Join",
-      "subtitle": "Jump ’n’ Run Webgame",
+      "subtitle": "Jump ‘n’ Run Webgame",
       "description": "Ein vollständig in JavaScript entwickeltes Browser-Game mit eigenem Design, Kampfmechanik und modularer Gegner-KI. Aufbauend auf einer komponentenbasierten Architektur und optimiert für flüssige Performance."
+    },
+    "join": {
+      "title": "Join",
+      "subtitle": "Projektmanagement-Tool",
+      "description": "Ein kollaboratives Kanban-Board zur Aufgabenverwaltung. Nutzer können Tasks erstellen, zuweisen und per Drag-and-Drop organisieren – entwickelt mit HTML, CSS und JavaScript."
     },
     "placeholder": {
       "title": "Placeholder",

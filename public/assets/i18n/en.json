@@ -55,15 +55,15 @@
       "liveTest": "Live Test",
       "nextProject": "Next project"
     },
-    "pokedex": {
-      "title": "Pokedex",
-      "subtitle": "API-based Pokédex",
-      "description": "A responsive Pokédex powered by the PokéAPI. Search, filter, and explore Pokémon stats with smooth animations and offline caching."
-    },
-    "goblinSlayer": {
-      "title": "Goblin Slayer",
-      "subtitle": "Jump ’n’ Run Web Game",
+    "elPolloLoco": {
+      "title": "El Pollo Loco",
+      "subtitle": "Jump ‘n’ Run Web Game",
       "description": "A fully JavaScript-built browser game with custom design, combat mechanics, and modular enemy AI. Built on a component-based architecture and optimized for smooth performance."
+    },
+    "join": {
+      "title": "Join",
+      "subtitle": "Project Management Tool",
+      "description": "A collaborative Kanban board for task management. Users can create, assign, and organize tasks via drag-and-drop — built with HTML, CSS, and JavaScript."
     },
     "placeholder": {
       "title": "Placeholder",

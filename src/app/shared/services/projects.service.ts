@@ -7,9 +7,9 @@ import { Project } from '../models/project.model';
 export class ProjectsService {
   private readonly projects: Project[] = [
     {
-      title: 'projects.pokedex.title',
-      subtitle: 'projects.pokedex.subtitle',
-      description: 'projects.pokedex.description',
+      title: 'projects.elPolloLoco.title',
+      subtitle: 'projects.elPolloLoco.subtitle',
+      description: 'projects.elPolloLoco.description',
       technologies: ['CSS', 'HTML', 'JavaScript'],
       stack: [
         {
@@ -39,9 +39,9 @@ export class ProjectsService {
       liveUrl: 'https://yourwebsite.com/pokedex',
     },
     {
-      title: 'projects.goblinSlayer.title',
-      subtitle: 'projects.goblinSlayer.subtitle',
-      description: 'projects.goblinSlayer.description',
+      title: 'projects.join.title',
+      subtitle: 'projects.join.subtitle',
+      description: 'projects.join.description',
       technologies: ['CSS', 'HTML', 'JavaScript', 'API'],
       stack: [
         {
