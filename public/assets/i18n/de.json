@@ -48,7 +48,7 @@
   "projects": {
     "eyebrow": "Portfolio",
     "title": "Meine Projekte",
-    "lead": "Eine Auswahl meiner Arbeiten. Jedes Projekt zeigt, wie ich Ideen umsetze, sauberen Code schreibe und Technologien miteinander verbinde.",
+    "lead": "Eine Auswahl meiner Arbeiten. Jedes Projekt zeigt, wie ich Ideen strukturiert umsetze, sauberen Code entwickle und moderne Technologien sinnvoll miteinander verbinde. Der Fokus liegt auf klarer Architektur, Performance und einem durchdachten Nutzererlebnis.",
     "dialog": {
       "question": "Was macht dieses Projekt aus?",
       "github": "GitHub",

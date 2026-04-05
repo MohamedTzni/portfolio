@@ -48,7 +48,7 @@
   "projects": {
     "eyebrow": "Portfolio",
     "title": "Featured Projects",
-    "lead": "Explore a selection of my work here – interact with projects to see my skills in action.",
+    "lead": "A selection of my work. Each project demonstrates how I turn ideas into structured solutions, write clean code, and combine modern technologies effectively. The focus is on clear architecture, performance, and a well designed user experience.",
     "dialog": {
       "question": "What is this project about?",
       "github": "GitHub",
