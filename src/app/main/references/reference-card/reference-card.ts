@@ -1,8 +1,13 @@
-﻿import { Component } from '@angular/core';
+﻿import { Component, Input } from '@angular/core';
+import { TranslocoPipe } from '@jsverse/transloco';
+import { Reference } from '../../../shared/models/reference.model';
 
 @Component({
-  standalone: true,
   selector: 'app-reference-card',
-  template: '<div></div>',
+  imports: [TranslocoPipe],
+  templateUrl: './reference-card.html',
+  styleUrl: './reference-card.scss',
 })
-export class ReferenceCard {}
+export class ReferenceCard {
+  @Input({ required: true }) reference!: Reference;
+}

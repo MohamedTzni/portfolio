@@ -1,8 +1,11 @@
 ﻿import { Component } from '@angular/core';
+import { TranslocoPipe } from '@jsverse/transloco';
 
 @Component({
   standalone: true,
   selector: 'app-contact-info',
-  template: '<div></div>',
+  imports: [TranslocoPipe],
+  templateUrl: './contact-info.html',
+  styleUrl: './contact-info.scss',
 })
 export class ContactInfo {}
