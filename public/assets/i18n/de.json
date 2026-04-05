@@ -74,7 +74,7 @@
   "references": {
     "title": "Was Kollegen über mich sagen",
     "items": {
-      "heinze": {
+      "reference1": {
         "name": "Platzhalter Name",
         "role": "Platzhalter Rolle",
         "text": "Platzhalter für Kollegen-Feedback. Hier kann später ein echtes Testimonial eingefügt werden."

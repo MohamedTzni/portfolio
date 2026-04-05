@@ -74,7 +74,7 @@
   "references": {
     "title": "What colleagues say about me",
     "items": {
-      "heinze": {
+      "reference1": {
         "name": "Placeholder Name",
         "role": "Placeholder Role",
         "text": "Placeholder for colleague feedback. A real testimonial can be added here later."

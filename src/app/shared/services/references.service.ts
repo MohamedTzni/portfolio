@@ -7,9 +7,9 @@ import { Reference } from '../models/reference.model';
 export class ReferencesService {
   private readonly references: Reference[] = [
     {
-      name: 'references.items.heinze.name',
-      role: 'references.items.heinze.role',
-      text: 'references.items.heinze.text',
+      name: 'references.items.reference1.name',
+      role: 'references.items.reference1.role',
+      text: 'references.items.reference1.text',
     },
     {
       name: 'references.items.schmidt.name',
