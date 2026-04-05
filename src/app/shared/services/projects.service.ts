@@ -97,6 +97,38 @@ export class ProjectsService {
       githubUrl: 'https://github.com/yourusername',
       liveUrl: 'https://yourwebsite.com',
     },
+    {
+      title: 'projects.placeholder2.title',
+      subtitle: 'projects.placeholder2.subtitle',
+      description: 'projects.placeholder2.description',
+      technologies: ['Angular', 'TypeScript', 'Firebase', 'CSS'],
+      stack: [
+        {
+          label: 'Angular',
+          icon: 'assets/icon/skill-icon/angular_icon.png',
+          alt: 'Angular icon',
+        },
+        {
+          label: 'TypeScript',
+          icon: 'assets/icon/skill-icon/typescript_icon.png',
+          alt: 'TypeScript icon',
+        },
+        {
+          label: 'Firebase',
+          icon: 'assets/icon/skill-icon/firebase_icon.png',
+          alt: 'Firebase icon',
+        },
+        {
+          label: 'CSS',
+          icon: 'assets/icon/skill-icon/css_icon.png',
+          alt: 'CSS icon',
+        },
+      ],
+      preview: 'assets/img/projects/placeholder.png',
+      previewAlt: 'Placeholder application preview',
+      githubUrl: 'https://github.com/yourusername',
+      liveUrl: 'https://yourwebsite.com',
+    },
   ];
 
   /**

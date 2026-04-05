@@ -69,6 +69,11 @@
       "title": "Placeholder",
       "subtitle": "Placeholder Subtitle",
       "description": "Placeholder description"
+    },
+    "placeholder2": {
+      "title": "Placeholder",
+      "subtitle": "Placeholder Subtitle",
+      "description": "Placeholder description"
     }
   },
   "references": {
