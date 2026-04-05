@@ -63,7 +63,7 @@
     "join": {
       "title": "Join",
       "subtitle": "Project Management Tool",
-      "description": "A collaborative Kanban board for task management. Users can create, assign, and organize tasks via drag and drop — built with Angular, TypeScript, Firebase, HTML and CSS."
+      "description": "A collaborative Kanban board for task management. Users can create, assign, and organize tasks via drag-and-drop, built with Angular, TypeScript, Firebase, HTML and CSS."
     },
     "placeholder": {
       "title": "Placeholder",
