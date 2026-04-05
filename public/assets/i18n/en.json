@@ -27,11 +27,11 @@
   "aboutMe": {
     "tag": "Who I am",
     "title": "About Me",
-    "intro": "Hi, I'm Mohamed — a full-stack developer passionate about clean code, scalable architectures, and clear interfaces. What excites me most is when frontend and backend come together seamlessly to turn an idea into a smooth user experience.",
+    "intro": "Hi, I am Mohamed, a Fullstack Developer with a passion for clean code, scalable architectures, and intuitive user interfaces.What excites me most is the seamless interaction between frontend and backend, turning ideas into smooth and high performance user experiences.",
     "highlights": {
-      "location": "From Solingen, Germany — I enjoy working remotely and in international teams.",
-      "mindset": "Curious and growth-oriented — I explore new technologies every sprint and share my insights with the team.",
-      "problem": "Analytical problem-solver — I break challenges into testable steps, measure results, and iterate toward the best solution."
+      "location": "Solingen, Germany. I work remotely and enjoy collaborating with international teams.",
+      "mindset": "Curious and growth driven. In every sprint, I explore new technologies, expand my skill set, and actively share knowledge with my team.",
+      "problem": "Analytical problem solver. I break down complex challenges into structured and testable steps, measure outcomes, and continuously optimize for the best solution."
     }
   },
   "skills": {
