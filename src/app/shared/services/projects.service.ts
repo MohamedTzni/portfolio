@@ -28,10 +28,10 @@ export class ProjectsService {
           alt: 'JavaScript icon',
         },
       ],
-      preview: 'assets/img/projects/el-pollo-loco.png',
+      preview: 'assets/img/projects/el-pollo-loco.webp',
       previewAlt: 'El Pollo Loco gameplay preview',
       githubUrl: 'https://github.com/MohamedTzni/el-pollo-loco',
-      liveUrl: 'https://yourwebsite.com/pokedex',
+      liveUrl: 'http://el-pollo-loco.mohamed-touzani.de/',
     },
     {
       title: 'projects.join.title',
@@ -65,10 +65,10 @@ export class ProjectsService {
           alt: 'HTML icon',
         },
       ],
-      preview: 'assets/img/projects/join.png',
+      preview: 'assets/img/projects/join.webp',
       previewAlt: 'Join project board preview',
       githubUrl: 'https://github.com/MohamedTzni/join',
-      liveUrl: 'https://yourwebsite.com/goblin_slayer',
+      liveUrl: 'http://join.mohamed-touzani.de/',
     },
     {
       title: 'projects.placeholder.title',
@@ -101,6 +101,7 @@ export class ProjectsService {
       previewAlt: 'Placeholder application preview',
       githubUrl: 'https://github.com/yourusername',
       liveUrl: 'https://yourwebsite.com',
+      hidden: true,
     },
     {
       title: 'projects.placeholder2.title',
@@ -133,6 +134,7 @@ export class ProjectsService {
       previewAlt: 'Placeholder application preview',
       githubUrl: 'https://github.com/yourusername',
       liveUrl: 'https://yourwebsite.com',
+      hidden: true,
     },
   ];
 
@@ -141,7 +143,7 @@ export class ProjectsService {
    * @returns {Project[]} Array of all projects.
    */
   getProjects(): Project[] {
-    return this.projects;
+    return this.projects.filter(p => !p.hidden);
   }
 
   /**

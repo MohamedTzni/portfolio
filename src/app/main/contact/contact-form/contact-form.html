@@ -14,7 +14,7 @@
             <div class="field-content">
                 <label for="name" class="field-label">{{ 'contact.form.nameLabel' | transloco }}</label>
                 <input type="text" id="name" name="name" class="field-input" [(ngModel)]="name" (input)="onNameInput()"
-                    (focus)="onNameInput()"
+                    (blur)="onNameBlur()"
                     [placeholder]="nameError ? nameErrorMessage : ('contact.form.namePlaceholder' | transloco)" />
             </div>
         </div>
@@ -23,7 +23,7 @@
             <div class="field-content">
                 <label for="email" class="field-label">{{ 'contact.form.emailLabel' | transloco }}</label>
                 <input type="email" id="email" name="email" class="field-input" [(ngModel)]="email"
-                    (input)="onEmailInput()" (focus)="onEmailInput()"
+                    (input)="onEmailInput()" (blur)="onEmailBlur()"
                     [placeholder]="emailError ? emailErrorMessage : ('contact.form.emailPlaceholder' | transloco)" />
             </div>
         </div>
@@ -32,7 +32,7 @@
             <div class="field-content">
                 <label for="message" class="field-label">{{ 'contact.form.messageLabel' | transloco }}</label>
                 <input type="text" id="message" name="message" class="field-input" [(ngModel)]="message"
-                    (input)="onMessageInput()" (focus)="onMessageInput()"
+                    (input)="onMessageInput()" (blur)="onMessageBlur()"
                     [placeholder]="messageError ? messageErrorMessage : ('contact.form.messagePlaceholder' | transloco)" />
             </div>
         </div>

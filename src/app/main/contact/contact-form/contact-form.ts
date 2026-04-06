@@ -48,15 +48,36 @@ export class ContactForm {
     }
   }
 
+  onNameBlur(): void {
+    if (!this.name || this.name.trim() === '') {
+      this.nameError = true;
+    }
+  }
+
   onEmailInput(): void {
     if (this.emailError) {
       this.emailError = false;
     }
   }
 
+  onEmailBlur(): void {
+    if (!this.email || this.email.trim() === '') {
+      this.emailError = true;
+    } else {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      this.emailError = !emailRegex.test(this.email);
+    }
+  }
+
   onMessageInput(): void {
     if (this.messageError) {
       this.messageError = false;
+    }
+  }
+
+  onMessageBlur(): void {
+    if (!this.message || this.message.trim() === '') {
+      this.messageError = true;
     }
   }
 

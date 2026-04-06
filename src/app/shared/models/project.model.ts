@@ -14,4 +14,5 @@ export interface Project {
   previewAlt: string;
   githubUrl: string;
   liveUrl: string;
+  hidden?: boolean;
 }
