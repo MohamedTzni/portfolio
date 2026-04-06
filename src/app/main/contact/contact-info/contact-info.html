@@ -9,7 +9,10 @@
     <div class="about-section">
         <div class="about-content">
             <h2 class="about-title">{{ 'contact.problem.title' | transloco }}</h2>
-            <p class="about-description" [innerHTML]="'contact.problem.description' | transloco">
+            <p class="about-description">{{ 'contact.problem.description' | transloco }}</p>
+            <p class="about-cta">
+                {{ 'contact.problem.ctaText' | transloco }}
+                <a href="#contact" class="cta-link">{{ 'contact.problem.ctaLink' | transloco }}</a>
             </p>
         </div>
     </div>

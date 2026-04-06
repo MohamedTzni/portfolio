@@ -106,7 +106,9 @@
     "title": "Lass uns zusammen arbeiten",
     "problem": {
       "title": "Suchst du einen Entwickler?",
-      "description": "Ich unterstütze Teams und Projekte mit sauberem Code, durchdachten Lösungen und einem klaren Blick für Nutzererlebnisse. Wenn du einen zuverlässigen Fullstack-Entwickler suchst, der Ideen effizient umsetzt – nimm gerne Kontakt auf."
+      "description": "Ich unterstütze Teams und Projekte mit sauberem Code, durchdachten Lösungen und einem klaren Blick für Nutzererlebnisse.",
+      "ctaText": "Brauchst du einen Fullstack Developer?",
+      "ctaLink": "Nimm Kontakt auf!"
     },
     "form": {
       "nameLabel": "Wie ist dein Name?",

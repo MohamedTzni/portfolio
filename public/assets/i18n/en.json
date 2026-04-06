@@ -106,7 +106,9 @@
     "title": "Let’s work together",
     "problem": {
       "title": "Looking for a developer?",
-      "description": "I help teams and projects with clean code, solid architecture, and a strong focus on user experience. If you’re looking for a reliable full-stack developer who brings ideas to life — <strong>let’s talk.</strong>"
+      "description": "I help teams and projects with clean code, solid architecture, and a strong focus on user experience.",
+      "ctaText": "Need a Fullstack Developer?",
+      "ctaLink": "Let’s talk!"
     },
     "form": {
       "nameLabel": "What's your name?",
