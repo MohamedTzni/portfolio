@@ -7,7 +7,7 @@ import emailjs from '@emailjs/browser';
 export class EmailService {
   private readonly PUBLIC_KEY = 'PPuo1GE8XK2_q4bSE';
   private readonly SERVICE_ID = 'service_r7jawll';
-  private readonly TEMPLATE_ID = 'template_bg27gdc';
+  private readonly TEMPLATE_ID = 'template_gsnk7f8';
 
   /**
    * Initializes the EmailService and configures EmailJS with the public key.
