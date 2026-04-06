@@ -1,35 +1,53 @@
-﻿# Portfolio â€“ Mohamed Touzani
+# Mohamed Touzani — Portfolio
 
-A personal developer portfolio built with **Angular 20** (standalone components), featuring:
+Personal developer portfolio built with **Angular 20** (standalone components).
 
-- Bilingual support (DE / EN) via [Transloco](https://jsverse.github.io/transloco/)
+---
+
+## Tech Stack
+
+| Layer | Technology |
+| --- | --- |
+| Framework | Angular 20 (standalone) |
+| i18n | Transloco (DE / EN) |
+| Mailing | EmailJS |
+| Styling | SCSS |
+| Build | Angular CLI + esbuild |
+
+---
+
+## Features
+
+- Hero section with marquee animation and custom cursor effect
+- About Me, Skills, Projects, References & Contact sections
+- Live project previews with dialog
+- Infinite-scroll references carousel
 - Responsive design with mobile burger menu
-- Hero section with marquee animation and custom cursor shadow
-- Projects section with live preview and dialog
-- References carousel with infinite scroll
-- Contact form powered by [EmailJS](https://www.emailjs.com/)
+- Bilingual (DE / EN) — language persisted in localStorage
 - Legal Notice & Privacy Policy pages
 
-## Development server
+---
+
+## Getting Started
 
 ```bash
-ng serve
+# Install dependencies
+npm install
+
+# Start dev server → http://localhost:4200
+npm start
+
+# Production build
+npm run build
+
+# Run unit tests
+npm test
 ```
 
-Open `http://localhost:4200/` in your browser. Hot reload is enabled.
-
-## Build
-
-```bash
-ng build
-```
-
-## Run unit tests
-
-```bash
-ng test
-```
+---
 
 ## i18n
 
-Translation files are located in `public/assets/i18n/`. Language preference is persisted in localStorage.
+Translation files: `public/assets/i18n/`
+
+Add a new language by creating a matching JSON file and registering it in the Transloco config.
