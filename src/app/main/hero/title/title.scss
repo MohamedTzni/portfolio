@@ -164,6 +164,14 @@
   }
 }
 
+@media (max-width: 489px) {
+  .hero-title__headline {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+}
+
 @media (max-width: 350px) {
   .hero-title__actions {
     gap: 8px;
