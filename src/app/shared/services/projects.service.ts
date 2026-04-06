@@ -27,11 +27,6 @@ export class ProjectsService {
           icon: 'assets/icon/skill-icon/javascript_icon.png',
           alt: 'JavaScript icon',
         },
-        {
-          label: 'API',
-          icon: 'assets/icon/skill-icon/api_icon.png',
-          alt: 'API icon',
-        },
       ],
       preview: 'assets/img/projects/el-pollo-loco.png',
       previewAlt: 'El Pollo Loco gameplay preview',

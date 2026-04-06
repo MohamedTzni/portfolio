@@ -58,7 +58,7 @@
     "elPolloLoco": {
       "title": "El Pollo Loco",
       "subtitle": "Jump ‘n’ Run Webgame",
-      "description": "Ein vollständig in JavaScript entwickeltes Browser-Game mit eigenem Design, Kampfmechanik und modularer Gegner-KI. Aufbauend auf einer komponentenbasierten Architektur und optimiert für flüssige Performance."
+      "description": "Ein vollständig in JavaScript entwickeltes Browser-Game mit eigenem Design, Kampfmechanik und modularer Gegnerlogik. Aufbauend auf einer komponentenbasierten Architektur und optimiert für flüssige Performance."
     },
     "join": {
       "title": "Join",
