@@ -6,7 +6,7 @@ import emailjs from '@emailjs/browser';
 })
 export class EmailService {
   private readonly PUBLIC_KEY = 'oNr2zKbhd4SQ0pALM';
-  private readonly SERVICE_ID = 'service_ovzmbvo';
+  private readonly SERVICE_ID = 'service_r7jawll';
   private readonly TEMPLATE_ID = 'template_bg27gdc';
 
   /**
