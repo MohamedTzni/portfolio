@@ -2,6 +2,7 @@
 import { MainPage } from './main/main-page/main-page';
 import { LegalNotice } from './shared/legal-notice/legal-notice';
 import { PrivacyPolicy } from './shared/privacy-policy/privacy-policy';
+import { BlogComponent } from './blog/blog';
 
 export const routes: Routes = [
   {
@@ -20,4 +21,8 @@ export const routes: Routes = [
     path: '**',
     redirectTo: '',
   },
+   {
+    path: 'blog',
+    component: BlogComponent
+  }
 ];

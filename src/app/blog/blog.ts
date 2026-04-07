@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { WordpressService } from '../services/wordpress.service';
+import { WordpressService } from '../shared/services/wordpress.service';
 
 @Component({
   selector: 'app-blog',
