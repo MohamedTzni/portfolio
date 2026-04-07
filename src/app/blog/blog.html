@@ -1,0 +1,8 @@
+<div class="blog-container">
+  <h1>Blog</h1>
+
+  <div *ngFor="let post of posts" class="post">
+    <h2 [innerHTML]="post.title.rendered"></h2>
+    <div [innerHTML]="post.excerpt.rendered"></div>
+  </div>
+</div>
