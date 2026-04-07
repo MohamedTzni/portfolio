@@ -63,9 +63,9 @@
   color: #3dcfb6;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 319px) {
   .logo__mark {
-    display: none;
+    display: none !important;
   }
 
   .logo__wordmark {
