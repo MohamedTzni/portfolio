@@ -59,6 +59,8 @@
     &--icons {
       flex: 1 1 520px;
       max-width: 680px;
+      align-self: flex-start;
+      padding-top: calc(clamp(21.6px, 3.6vw, 28.8px) + clamp(12px, 2vw, 20px));
     }
 
     @media (min-width: 1920px) {
