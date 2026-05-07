@@ -65,6 +65,11 @@
       "subtitle": "Projektmanagement Tool",
       "description": "Ein kollaboratives Kanban-Board zur Aufgabenverwaltung. Nutzer können Tasks erstellen, zuweisen und per Drag-and-Drop organisieren, entwickelt mit Angular, TypeScript, Firebase, HTML und CSS."
     },
+    "coderr": {
+      "title": "Coderr",
+      "subtitle": "Freelancer-Plattform API",
+      "description": "Eine RESTful Backend-Plattform, die Freelancer mit Auftraggebern verbindet. Entwickelt mit Django REST Framework und PostgreSQL, containerisiert mit Docker für zuverlässiges und skalierbares Deployment."
+    },
     "placeholder": {
       "title": "Placeholder",
       "subtitle": "Platzhalter Untertitel",

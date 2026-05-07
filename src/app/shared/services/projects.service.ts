@@ -71,6 +71,38 @@ export class ProjectsService {
       liveUrl: 'http://join.mohamed-touzani.de/',
     },
     {
+      title: 'projects.coderr.title',
+      subtitle: 'projects.coderr.subtitle',
+      description: 'projects.coderr.description',
+      technologies: ['Python', 'Django', 'Django REST Framework', 'PostgreSQL', 'Docker'],
+      stack: [
+        {
+          label: 'Python',
+          icon: 'assets/icon/skill-icon/Python.png',
+          alt: 'Python icon',
+        },
+        {
+          label: 'Django',
+          icon: 'assets/icon/skill-icon/Django.png',
+          alt: 'Django icon',
+        },
+        {
+          label: 'PostgreSQL',
+          icon: 'assets/icon/skill-icon/PostgreSQL.png',
+          alt: 'PostgreSQL icon',
+        },
+        {
+          label: 'Docker',
+          icon: 'assets/icon/skill-icon/Docker.png',
+          alt: 'Docker icon',
+        },
+      ],
+      preview: 'assets/img/projects/coderr.png',
+      previewAlt: 'Coderr platform preview',
+      githubUrl: 'https://github.com/MohamedTzni/coderr',
+      liveUrl: 'https://coderr.mohamed-touzani.de',
+    },
+    {
       title: 'projects.placeholder.title',
       subtitle: 'projects.placeholder.subtitle',
       description: 'projects.placeholder.description',

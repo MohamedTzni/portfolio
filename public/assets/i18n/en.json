@@ -65,6 +65,11 @@
       "subtitle": "Project Management Tool",
       "description": "A collaborative Kanban board for task management. Users can create, assign, and organize tasks via drag-and-drop, built with Angular, TypeScript, Firebase, HTML and CSS."
     },
+    "coderr": {
+      "title": "Coderr",
+      "subtitle": "Freelancer Platform API",
+      "description": "A RESTful backend platform connecting freelancers with clients. Built with Django REST Framework and PostgreSQL, containerized with Docker for reliable and scalable deployment."
+    },
     "placeholder": {
       "title": "Placeholder",
       "subtitle": "Placeholder Subtitle",
