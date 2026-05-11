@@ -16,7 +16,6 @@ export class SkillsService {
     { label: 'Git', icon: 'assets/icon/skill-icon/git_icon.png' },
     { label: 'REST-API', icon: 'assets/icon/skill-icon/api_icon.png' },
     { label: 'Scrum', icon: 'assets/icon/skill-icon/scrum_icon.png' },
-    { label: 'Growth mindset', icon: 'assets/icon/skill-icon/mindset_icon.png' },
     { label: 'Python', icon: 'assets/icon/skill-icon/Python.png' },
     { label: 'Django', icon: 'assets/icon/skill-icon/Django.png' },
     { label: 'SQL', icon: 'assets/icon/skill-icon/SQL.png' },
@@ -24,6 +23,7 @@ export class SkillsService {
     { label: 'Docker', icon: 'assets/icon/skill-icon/Docker.png' },
     { label: 'Linux', icon: 'assets/icon/skill-icon/Linux.png' },
     { label: 'Cloud', icon: 'assets/icon/skill-icon/Cloud.png' },
+    { label: 'Growth mindset', icon: 'assets/icon/skill-icon/mindset_icon.png' },
   ];
 
   /**
