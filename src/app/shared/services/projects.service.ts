@@ -103,6 +103,48 @@ export class ProjectsService {
       liveUrl: 'https://coderr.mohamed-touzani.de',
     },
     {
+      title: 'projects.videoflix.title',
+      subtitle: 'projects.videoflix.subtitle',
+      description: 'projects.videoflix.description',
+      technologies: ['Python', 'Django', 'Django REST Framework', 'PostgreSQL', 'Docker', 'Cloud'],
+      stack: [
+        {
+          label: 'Python',
+          icon: 'assets/icon/skill-icon/Python.png',
+          alt: 'Python icon',
+        },
+        {
+          label: 'Django',
+          icon: 'assets/icon/skill-icon/Django.png',
+          alt: 'Django icon',
+        },
+        {
+          label: 'Django REST Framework',
+          icon: 'assets/icon/skill-icon/api_icon.png',
+          alt: 'API icon',
+        },
+        {
+          label: 'PostgreSQL',
+          icon: 'assets/icon/skill-icon/PostgreSQL.png',
+          alt: 'PostgreSQL icon',
+        },
+        {
+          label: 'Docker',
+          icon: 'assets/icon/skill-icon/Docker.png',
+          alt: 'Docker icon',
+        },
+        {
+          label: 'Cloud',
+          icon: 'assets/icon/skill-icon/Cloud.png',
+          alt: 'Cloud icon',
+        },
+      ],
+      preview: 'assets/img/projects/videoflix.png',
+      previewAlt: 'VideoFlix streaming platform preview',
+      githubUrl: 'https://github.com/MohamedTzni/videoflix',
+      liveUrl: 'https://videoflix.mohamed-touzani.de/',
+    },
+    {
       title: 'projects.placeholder.title',
       subtitle: 'projects.placeholder.subtitle',
       description: 'projects.placeholder.description',

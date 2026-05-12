@@ -70,6 +70,11 @@
       "subtitle": "Freelancer Platform API",
       "description": "A RESTful backend platform connecting freelancers with clients. Built with Django REST Framework and PostgreSQL, containerized with Docker for reliable and scalable deployment."
     },
+    "videoflix": {
+      "title": "VideoFlix",
+      "subtitle": "Video Streaming Platform",
+      "description": "A fullstack video streaming application with authentication, a protected user area, and a responsive frontend. The backend serves content through a REST API and is containerized for reliable deployment."
+    },
     "placeholder": {
       "title": "Placeholder",
       "subtitle": "Placeholder Subtitle",
